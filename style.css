@@ -1,0 +1,12 @@
+/* Font style */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Prata&display=swap');
+
+/* Global styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
