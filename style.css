@@ -10,3 +10,8 @@
     box-sizing: border-box;
     font-size: 14px;
 }
+
+html {
+    background: url("../image/Magic-Kingdom.webp") no-repeat center center fixed;
+    background-size: cover;
+}
