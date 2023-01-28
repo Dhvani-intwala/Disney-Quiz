@@ -27,4 +27,10 @@ h2{
     padding: 20px 20px;
     color: #fff9e6;
 }
+/* header styles*/
 
+header {
+    display: grid;
+    grid-template-columns: min(150px) auto;
+    padding: 0 10px;
+}
