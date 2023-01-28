@@ -34,3 +34,46 @@ header {
     grid-template-columns: min(150px) auto;
     padding: 0 10px;
 }
+
+.header-logo{
+    justify-self: center;
+    align-self: center;
+}
+
+h1{
+    font-size: 4rem;
+    font-family: 'Cinzel', sans-serif;
+    color: whitesmoke;
+    align-self: center;
+    text-align: center;
+    /* code for h1 3d effect can be found here: https://codepen.io/designcouch/pen/MWrypV */
+    text-shadow:
+    1px 1px 0px #5a020e,
+    2px 2px 0px #5a020e,
+    3px 3px 0px #5a020e,
+    4px 4px 0px #5a020e,
+    5px 5px 0px #5a020e,
+    6px 6px 0px #5a020e,
+    7px 7px 0px #5a020e,
+    8px 8px 0px #5a020e,
+    9px 9px 0px #5a020e,
+    10px 10px 0px #5a020e,
+    15px 15px 25px rgba(0,0,0,.9);
+  	transition: .5s ease-in-out;
+}
+
+h1:hover {
+	left:20px;
+  text-shadow:
+    -1px 1px 0px #5a020e,
+    -2px 2px 0px #5a020e,
+    -3px 3px 0px #5a020e,
+    -4px 4px 0px #5a020e,
+    -5px 5px 0px #5a020e,
+    -6px 6px 0px #5a020e,
+    -7px 7px 0px #5a020e,
+    -8px 8px 0px #5a020e,
+    -9px 9px 0px #5a020e,
+    -10px 10px 0px #5a020e,
+    -15px 15px 25px rgba(0,0,0,.9);
+}
