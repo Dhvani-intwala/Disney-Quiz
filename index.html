@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-     <!--script for font awesome icons above external styles.css link so styles.css styles take precedence-->
+    
      <script src="https://kit.fontawesome.com/b7114f05a1.js" crossorigin="anonymous"></script>
 
 </head>
@@ -57,7 +55,7 @@
                         <h3>Easy</h3>
                         <ul>
                             <li>Difficulty questions set to easy</li>
-                            <li>Timer = 20s </li>
+                            <li>Timer = 30s </li>
                             <li>2 points for every correct answer</li>
                             <li>No penalty for wrong answers</li>
                         </ul>
@@ -66,7 +64,7 @@
                         <h3> Medium</h3>
                         <ul>
                             <li>Difficulty questions set to Medium</li>
-                            <li>Timer = 15s </li>
+                            <li>Timer = 25s </li>
                             <li>5 points for every correct answer</li>
                             <li>3 point penalty for wrong answers or if timer runs out</li>
                         </ul>
@@ -75,14 +73,36 @@
                         <h3> Hard</h3>
                         <ul>
                             <li>Difficulty questions set to Hard</li>
-                            <li>Timer = 10s </li>
-                            <li>2 points + the time left, for every correct answer</li>
-                            <li>5 point penalty for wrong answers or if timer runs out</li>
+                            <li>Timer = 15s </li>
+                            <li>5 points + the time left, for every correct answer</li>
+                            <li>10 point penalty for wrong answers or if timer runs out</li>
                         </ul>
                     </div>
                     <button id="rules-home-btn" class="play-again-btn home-button">Home</button>
                 </div>
             </div>
+                   <!-- Start of game difficulty screen -->
+                   <div class="quiz-level hide" id="quiz-level-section">
+                    <div class="info-bar">
+                        <div>
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div class="audio-icon-button">
+                            <i class="fas fa-volume-mute audio-off "></i>
+                            <i class="fas fa-volume-up audio-on hide"></i>
+                        </div>
+                    </div>
+                    <div class="quiz-level-container">
+                        <div class="quiz-text">
+                            <h2>Select Level</h2>
+                        </div>
+                        <div class="level-btn-container">
+                            <button class="level-btn easy-level" id="easy-level-btn">Easy Level</button>
+                            <button class="level-btn medium-level" id="medium-level-btn">Medium Level</button>
+                            <button class="level-btn hard-level" id="hard-level-btn">Hard Level</button>
+                        </div>
+                    </div>
+                </div>
 
         </section>
 
