@@ -38,6 +38,7 @@ header {
 .header-logo{
     justify-self: center;
     align-self: center;
+    
 }
 
 h1{
@@ -60,6 +61,7 @@ h1{
     10px 10px 0px #5a020e,
     15px 15px 25px rgba(0,0,0,.9);
   	transition: .5s ease-in-out;
+    margin-right: 20px;
 }
 
 h1:hover {
@@ -77,3 +79,33 @@ h1:hover {
     -10px 10px 0px #5a020e,
     -15px 15px 25px rgba(0,0,0,.9);
 }
+.quiz-box {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px #fff9e6 solid;
+    outline: 1px solid #fff9e6;
+    outline-offset: -6px;
+    max-width: 80%;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+    padding: 10px;
+    box-shadow: 5px 5px 100px #fff9e6;
+}
+.info-bar {
+    height: 50px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    border-bottom: 1px solid #fff9e6;
+    text-align: center;
+}
+.fas,
+.fab,
+.far {
+    color: #fff9e6;
+    font-size: 1.6rem;
+}
+
