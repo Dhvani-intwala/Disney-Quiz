@@ -1,6 +1,7 @@
 /* Font style */
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
 
 /* Global styles */
 
@@ -42,7 +43,7 @@ header {
     
 }
 
-h1{
+.title{
     font-size: 4rem;
     font-family: 'Cinzel', sans-serif;
     color: whitesmoke;
@@ -64,7 +65,7 @@ h1{
   	transition: .5s ease-in-out;
 }
 
-h1:hover {
+.title:hover {
 	left:20px;
   text-shadow:
     -1px 1px 0px #5a020e,
@@ -78,6 +79,12 @@ h1:hover {
     -9px 9px 0px #5a020e,
     -10px 10px 0px #5a020e,
     -15px 15px 25px rgba(0,0,0,.9);
+}
+h1{
+    font-size: 3rem;
+    color: #fff9e6;
+    margin-bottom: 5rem;
+    font-family: 'Nova Square', cursive;
 }
 .container{
     display: flex;
@@ -131,5 +138,74 @@ i{
     font-size: 2rem;
     margin-left: 1rem;
 }
+.choice-container{
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 80%;
+    border-radius: 4px;
+    background-color: #c85161;
+    font-size: 3rem;
+    min-width: 80rem;
+    font-family: 'Nova Square', cursive;
 
+}
+.choice-container:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(222, 214, 214 ,0.5);
+    transform: scale(1.02);
+    transition: transform 100ms;
+}
+.choice-prefix{
+    padding: 2rem 2.5rem;
+    color: #fff9e6;
+}
+.choice-text{
+    padding: 2rem;
+    width:100%;
+}
+.correct{
+    background-color: linear-gradient(32deg, rgba(11, 223,36) 0%, rgb(41,232,111)100%);
+}
+.incorrect{
+    background-color: linear-gradient(32deg, rgba(230, 29,1) 0%, rgb(224 11, 11, 1)100%);
+}
+#hud{
+    display: flex;
+    justify-content: space-between;
+}
+.hud-prefix{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Nova Square', cursive;
+}
+.hud-main-text{
+    text-align: center;
+    font-family: 'Nova Square', cursive;
+}
+#progressBar{
+    width:20rem;
+    height: 3rem;
+    border: 0.2rem solid rgb(11,223,36);
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-bottom: 3rem;
+}
+.hud-item{
+    text-align: center;
+}
+#progressBarFull{
+    height: 100%;
+    background:  rgb(11,223,36);
+    width: 0%;
+}
+.container-quiz{
+    margin:10rem auto;
+}
 
+@media screen and (max-width:768px){
+    .choice-container{
+        min-width: 40px;
+}
+
+}
