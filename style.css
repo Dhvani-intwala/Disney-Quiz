@@ -12,8 +12,7 @@
 }
 
 html {
-    background: url("../image/Magic-Kingdom.webp") no-repeat center center fixed;
-    background-size: cover;
+    background-color: black;
 }
 main{
     display: grid;
@@ -33,6 +32,7 @@ header {
     display: grid;
     grid-template-columns: min(150px) auto;
     padding: 0 10px;
+    margin-top: 100px;
 }
 
 .header-logo{
@@ -49,7 +49,7 @@ h1{
     text-align: center;
     /* code for h1 3d effect can be found here: https://codepen.io/designcouch/pen/MWrypV */
     text-shadow:
-    1px 1px 0px #5a020e,
+    1px 1px 0px rgb(90, 2, 14),
     2px 2px 0px #5a020e,
     3px 3px 0px #5a020e,
     4px 4px 0px #5a020e,
@@ -61,7 +61,6 @@ h1{
     10px 10px 0px #5a020e,
     15px 15px 25px rgba(0,0,0,.9);
   	transition: .5s ease-in-out;
-    margin-right: 20px;
 }
 
 h1:hover {
@@ -79,95 +78,55 @@ h1:hover {
     -10px 10px 0px #5a020e,
     -15px 15px 25px rgba(0,0,0,.9);
 }
-.quiz-box {
-    background-color: rgba(0, 0, 0, 0.8);
-    border: 2px #fff9e6 solid;
-    outline: 1px solid #fff9e6;
-    outline-offset: -6px;
-    max-width: 80%;
-    width: 100%;
-    justify-self: center;
-    align-self: center;
-    padding: 10px;
-    box-shadow: 5px 5px 100px #fff9e6;
-}
-.info-bar {
-    height: 50px;
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    justify-items: center;
+.container{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #fff9e6;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+.text-center{
     text-align: center;
+}
+.hidden{
+    display: flex;
+}
+.btn{
+    font-size: 2.4rem;
+    padding: 1rem 0;
+    width:25rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color:rgb(222, 214, 214); 
+    background: linear-gradient(90deg, rgb(90, 2, 14) 0%, rgb(90, 2, 14)100%);
+    border-radius: 4px;
+}
+.btn:hover{
+    cursor:pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(33, 32, 32, 0.9);
+    transition:  transform 150ms;
+    transform: scale(1.03);
+}
+.btn[disabled]:hover{
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
 }
 
 i{
-    color: #fff9e6;
-    font-size: 1.6rem;
-}
-
-.level-btn-container,
-.quiz-start-content,
-.home-btn-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    align-items: center;
-}
-.level-btn-container,
-.quiz-start-content,
-.next-btn-container,
-.results-content-container,
-.home-btn-container {
-    margin-bottom: 20px;
-}
-.quiz-level-container,
-.quiz-start-content,
-.question-text,
-.results-content-container,
-.home-btn-container {
-    margin-top: 10px;
-}
-.level-btn,
-.start-button,
-.answer-btn,
-.next-btn,
-.play-again-btn,
-.save-button,
-.btn {
-    padding: 16px;
-    margin-top: 12px;
-    background-color: #0b0b0b;
-    color: #fff9e6;
     font-size: 2rem;
-    width: 70%;
-    border: 2px #fff9e6 solid;
-    outline: 1px dotted #fff9e6;
-    outline-offset: -10px;
-    font-family: 'Prata', sans-serif;
-}
-.user-score-container,
-.timer-container {
-    display: flex;
-}
-
-#user-score,
-#timer {
-    padding-left: 5px;
-    font-size: 1.4rem;
-}
-.level-btn:hover,
-.start-button:hover,
-.answer-btn-hover:hover,
-.next-btn-hover,
-.play-again-btn:hover,
-.btn:hover {
-    background-color: #0b0b0b;
-    color: white;
-    border: 2px #fff9e6 solid;
-    outline: 1px dotted #fff9e6;
-    transform: scale(0.9);
-    transition: transform 0.2s ease-in;
+    margin-left: 1rem;
 }
