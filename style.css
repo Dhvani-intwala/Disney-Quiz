@@ -9,6 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 14px;
+    color: white;
 }
 
 html {
@@ -130,3 +131,5 @@ i{
     font-size: 2rem;
     margin-left: 1rem;
 }
+
+
