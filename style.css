@@ -203,6 +203,66 @@ i{
     margin:10rem auto;
 }
 
+/* end page */
+
+.end-form-container{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+    margin: auto;
+}
+input{
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding:1.5rem;
+    font-size: 1.8rem;
+    border: none;
+}
+input::placeholder{
+    color: #aaa;
+}
+#username{
+    margin-bottom: 3rem;
+    width:80%;
+    outline: none;
+}
+#end-text {
+    font-size: 2.4rem;
+    color:#fff;
+    text-align: center;
+}
+#saveScorebtn{
+    border: none;
+}
+.btn2{
+    font-size: 2.4rem;
+    padding: 1rem 0;
+    width:25rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color:rgb(222, 214, 214); 
+    background: linear-gradient(90deg, rgb(90, 2, 14) 0%, rgb(90, 2, 14)100%);
+    border-radius: 4px;
+    margin-right: 65px;
+    margin: 10px auto;
+    
+}
+.container-end{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:  auto;
+    margin-top: 50px;
+    padding: 2rem;
+    width: 80%;
+}
+#finalScore{
+    text-align: center;
+}
+
 @media screen and (max-width:768px){
     .choice-container{
         min-width: 40px;
