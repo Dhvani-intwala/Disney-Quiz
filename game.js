@@ -1,8 +1,9 @@
-const question =document.querySelector('#question');
-const choices =document.querySelector('.choice-text');
-const progressText =document.querySelector('#progresstext');
-const scoreText =document.querySelector('#score');
-const progresssbarFull =document.querySelector('#progressBarFull');
+const question =document.querySelector("#question");
+const choices = Array.from(document.querySelectorAll('.choice-text'));
+const progressText =document.querySelector("#progresstext");
+const scoreText =document.querySelector("#score");
+const progresssbarFull =document.querySelector("#progressBarFull");
+
 
 let currentQuestion ={}
 let acceptingAnswers = true
@@ -101,13 +102,14 @@ let questions = [
 ]
 
 const SCORE_POINTS = 100
-const MAX_QUESTIONS = 4
+const MAX_QUESTIONS = 10
 
 startGame = () => {
     questionCounter = 0
     score = 0
-    avaliableQuestions =[...questions]
+    avaliableQuestions = [...questions]
     getNewQuestion()
+
 }
 
 getNewQuestion = () => {
@@ -118,10 +120,10 @@ getNewQuestion = () => {
     }
 
     questionCounter++
-    progressText.innerHTML = `Question ${questionCounter} of ${MAX_QUESTIONS}`
+    progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
     progresssbarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
 
-    const questionIndex =Math.floor(math.random () * avaliableQuestions.length)
+    const questionIndex = Math.floor(Math.random () * avaliableQuestions.length)
     currentQuestion = avaliableQuestions[questionIndex]
     question.innerText = currentQuestion.question
 
@@ -133,11 +135,11 @@ getNewQuestion = () => {
     avaliableQuestions.splice(questionIndex, 1)
 
     acceptingAnswers = true
+
 }
 choices.forEach(choice => {
     choice.addEventListener('click', e=> {
         if (!acceptingAnswers) return
-
         acceptingAnswers = false
         const selectedChoice = e.target
         const selectedAnswer = selectedChoice.dataset['number']
@@ -159,7 +161,7 @@ choices.forEach(choice => {
     })
 })
 
-    incrementScore = num => {
+    incrementScore = (num) => {
         score +=num
         scoreText.innerText = score
     }
