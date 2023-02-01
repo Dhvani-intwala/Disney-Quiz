@@ -10,7 +10,7 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 14px;
-    color: white;
+    color: rgb(246, 239, 239);
 }
 
 html {
@@ -47,6 +47,7 @@ header {
     font-size: 4rem;
     font-family: 'Cinzel', sans-serif;
     color: whitesmoke;
+    margin: initial;
     align-self: center;
     text-align: center;
     /* code for h1 3d effect can be found here: https://codepen.io/designcouch/pen/MWrypV */
@@ -93,6 +94,7 @@ h1{
     margin: 0 auto;
     padding: 2rem;
 }
+
 .flex-column{
     display: flex;
     flex-direction: column;
@@ -163,6 +165,16 @@ i{
     padding: 2rem;
     width:100%;
 }
+.container-quiz{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 90%;
+    margin:  2rem auto;
+
+}
+
 .correct{
     background-color: linear-gradient(32deg, rgba(11, 223,36) 0%, rgb(41,232,111)100%);
 }
@@ -199,8 +211,10 @@ i{
     background:  rgb(11,223,36);
     width: 0%;
 }
-.container-quiz{
-    margin:10rem auto;
+
+#question{
+    width: 90%;
+    font-size: 2rem;
 }
 
 /* end page */
@@ -219,9 +233,10 @@ input{
     padding:1.5rem;
     font-size: 1.8rem;
     border: none;
+    color: black;
 }
 input::placeholder{
-    color: #aaa;
+    color: black;
 }
 #username{
     margin-bottom: 3rem;
@@ -248,8 +263,14 @@ input::placeholder{
     border-radius: 4px;
     margin-right: 65px;
     margin: 10px auto;
-    
 }
+.btn2:hover{
+    cursor:pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(33, 32, 32, 0.9);
+    transition:  transform 150ms;
+    transform: scale(1.03);
+}
+
 .container-end{
     display: flex;
     justify-content: center;
@@ -261,6 +282,25 @@ input::placeholder{
 }
 #finalScore{
     text-align: center;
+}
+
+/* highscores page */
+
+.container-final{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2rem;
+    margin: 10rem auto;
+}
+#highScoresList {
+    list-style: none;
+    margin-bottom: 4rem;
+}
+.high-score{
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
 }
 
 @media screen and (max-width:768px){
