@@ -14,7 +14,8 @@
 }
 
 html {
-    background-color: black;
+   background-color: black;
+   
 }
 main{
     display: grid;
@@ -140,10 +141,14 @@ i{
     font-size: 2rem;
     margin-left: 1rem;
 }
+.audio-icon-button{
+    margin: auto;
+}
+
 .choice-container{
     display: flex;
     margin-bottom: 0.8rem;
-    width: 80%;
+    width: 40%;
     border-radius: 4px;
     background-color: #5a020e;
     font-size: 3rem;
@@ -170,7 +175,7 @@ i{
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    width: 90%;
+    width: 100%;
     margin:  2rem auto;
 
 }
@@ -190,6 +195,7 @@ i{
     font-size: 2.5rem;
     font-family: 'Nova Square', cursive;
 }
+
 .hud-main-text{
     text-align: center;
     font-family: 'Nova Square', cursive;
@@ -213,8 +219,9 @@ i{
 }
 
 #question{
-    width: 90%;
+    width: 80%;
     font-size: 2rem;
+    margin-left: 20%;
 }
 
 /* end page */
