@@ -15,7 +15,6 @@ username.addEventListener('keyup', () => {
 
 function saveHighScore (e) {
     e.preventDefault()
-    console.log("dhvani")
     const score ={
         score: mostRecentScore,
         name: username.value

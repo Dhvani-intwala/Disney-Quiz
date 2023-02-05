@@ -146,11 +146,11 @@ choices.forEach(choice => {
         const selectedAnswer = selectedChoice.dataset['number'];
 
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
-
+        
         if(classToApply === 'correct') {
             incrementScore(SCORE_POINTS);
         }
-
+        console.log(classToApply);
         selectedChoice.parentElement.classList.add(classToApply);
 
         setTimeout( () => {
