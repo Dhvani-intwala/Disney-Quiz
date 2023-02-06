@@ -12,11 +12,10 @@
 </head>
 <body>
     <main>
-        <header>
-            <img class="header-logo" src="https://www.thesecretobsession.com/wp-content/uploads/2016/11/Walt-Disney-Logo.png" alt="An image of the the mickey mouse" height="150" width="150">
-            <h1 class="title"> Disney world Quiz</h1>
-        </header>
-
+        <div>
+            <img class="logo" src="https://www.thesecretobsession.com/wp-content/uploads/2016/11/Walt-Disney-Logo.png" alt="An image of the the mickey mouse">
+        </div>
+        <h1 class="title"> Disney world Quiz</h1>
     
         <div class="audio-icon-button">
             <i class="fas fa-volume-up audio-on hide" onclick="changeIcon(this)"></i>
@@ -27,8 +26,8 @@
         <div class="container">
             <div id="home" class="flex-column flex-center">
                 <h2>Are you Ready?</h2>
-                <a href="game.html" class="btn">Start</a>
-                <a href="highscores.html" id="high-score-btn" class="btn">High Scores<i class="fas fa-crown"></i></a>
+                <a href="game.html" class="btn" onclick="audioButtons.play();">Start</a>
+                <a href="highscores.html" id="high-score-btn" class="btn" onclick="audioButtons.play();">High Scores<i class="fas fa-crown"></i></a>
             </div>
         </div>
 

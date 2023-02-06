@@ -19,9 +19,11 @@ html {
 }
 main{
     display: grid;
+    margin: auto;
     align-self: center;
     grid-gap: 1rem;
     justify-content: center;
+    width: 100%;
 }
 h2{
     font-size: 2.6rem;
@@ -31,16 +33,12 @@ h2{
 }
 /* header styles*/
 
-header {
-    display: grid;
-    grid-template-columns: min(150px) auto;
-    padding: 0 10px;
-    margin-top: 100px;
-}
-
-.header-logo{
-    justify-self: center;
-    align-self: center;
+.logo{
+    display: block;
+    margin: auto;
+    width: 10rem;
+    height: 10rem;
+    margin-top: 10%;
     
 }
 
@@ -85,15 +83,16 @@ header {
 h1{
     font-size: 3rem;
     color: #0f0e0f;
-    margin-bottom: 5rem;
     font-family: 'Nova Square', cursive;
 }
 .container{
-    display: flex;
+    display: block;
+    margin: auto;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     padding: 2rem;
+
    
 }
 
@@ -152,11 +151,9 @@ i{
 .choice-container{
     display: flex;
     margin-bottom: 0.8rem;
-    width: 40%;
     border-radius: 4px;
     background-color: #0f0e0fbb;
     font-size: 3rem;
-    min-width: 80rem;
     font-family: 'Nova Square', cursive;
 
 }
@@ -168,7 +165,8 @@ i{
 }
 .choice-prefix{
     padding: 2rem 2.5rem;
-    color: #fff9e6;
+    color: black;
+    background-color: rgb(216, 224, 217);;
 }
 .choice-text{
     padding: 2rem;
@@ -179,9 +177,11 @@ i{
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    width: 100%;
-    margin:  2rem auto;
-
+    margin:  5rem auto;
+    width: 80rem;
+}
+#game{
+    width:100%;
 }
 
 .correct{
@@ -223,9 +223,8 @@ i{
 }
 
 #question{
-    width: 80%;
+    margin-bottom: 2rem;
     font-size: 2rem;
-    margin-left: 20%;
 }
 
 /* end page */
@@ -316,7 +315,34 @@ input::placeholder{
 
 @media screen and (max-width:768px){
     .choice-container{
-        min-width: 40px;
-}
+        min-width: 25rem;
+    }
+    #question{
+        width: 100%;
+        margin-left: 10px;
+    }
+    .container-quiz{
+        margin-top: 10rem;
+        width: 40rem;
+    }
 
+    
+
+}
+@media screen and (max-width:375px){
+    
+    h1{
+        font-size: 1.8rem;
+    }
+   .container{
+    display: block;
+    margin: auto;
+   }
+   .choice-container{
+    width:20rem;
+   }
+   .container-quiz{
+    overflow: auto;
+   }
+  
 }

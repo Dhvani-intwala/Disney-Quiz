@@ -12,8 +12,8 @@ const audioOnButton = document.getElementsByClassName("audio-on");
 //const audioOffButton = document.getElementsByClassName("audio-off");
 let audioIconButton = document.getElementsByClassName('audio-icon-button');
 let toggleMusicP = document.getElementsByClassName('audiop');
-//const audioButtons = new Audio();
-//audioButtons.src = "./sounds/ButtonSolid.mp3";
+const audioButtons = new Audio();
+audioButtons.src = "sounds/ButtonSolid.mp3";
 
 let changeIcon = function(icon){
     icon.classList.toggle('fa-volume-off');
