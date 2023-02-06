@@ -55,7 +55,6 @@ let questions = [
         choice3: 'Nemo',
         choice4: 'Pumbaa',
         answer: 1,
-
     },
     {
         question:'“Silenzio Bruno!” is a famous tagline of which movie?',

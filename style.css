@@ -85,6 +85,7 @@ h1{
     color: #0f0e0f;
     font-family: 'Nova Square', cursive;
 }
+
 .container{
     display: block;
     margin: auto;
@@ -144,9 +145,9 @@ i{
     
 }
 .audio-icon-button{
-    margin: auto;
-    
+    margin: auto;   
 }
+/* game page */
 
 .choice-container{
     display: flex;
@@ -159,7 +160,7 @@ i{
 }
 .choice-container:hover{
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgb(222, 214, 214 ,0.5);
+    box-shadow:0 0.4rem 1.4rem 0 rgba(33, 32, 32, 0.9);
     transform: scale(1.02);
     transition: transform 100ms;
 }
@@ -177,7 +178,7 @@ i{
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    margin:  5rem auto;
+    margin:  1rem auto;
     width: 80rem;
 }
 #game{
@@ -225,6 +226,26 @@ i{
 #question{
     margin-bottom: 2rem;
     font-size: 2rem;
+}
+.game-title h1{
+    text-align: center;
+   margin-top: 40px;
+   margin-bottom: 10px;
+}
+.game-title ul{
+    text-align: center;
+    list-style-type: none;
+}
+
+.game-title a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    line-height: 20pt;
+}
+.game-title a:hover{
+    color: #0f0e0f;
+    
+
 }
 
 /* end page */
@@ -276,7 +297,7 @@ input::placeholder{
 }
 .btn2:hover{
     cursor:pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(246, 244, 244, 0.9);
+    box-shadow:0 0.4rem 1.4rem 0 rgba(33, 32, 32, 0.9);
     transition:  transform 150ms;
     transform: scale(1.03);
 }
@@ -315,34 +336,8 @@ input::placeholder{
 
 @media screen and (max-width:768px){
     .choice-container{
-        min-width: 25rem;
+        min-width: 40rem;
     }
-    #question{
-        width: 100%;
-        margin-left: 10px;
-    }
-    .container-quiz{
-        margin-top: 10rem;
-        width: 40rem;
-    }
-
-    
-
 }
-@media screen and (max-width:375px){
-    
-    h1{
-        font-size: 1.8rem;
-    }
-   .container{
-    display: block;
-    margin: auto;
-   }
-   .choice-container{
-    width:20rem;
-   }
-   .container-quiz{
-    overflow: auto;
-   }
-  
-}
+
+

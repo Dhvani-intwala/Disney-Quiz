@@ -1,7 +1,7 @@
 //var clickAudio = new Audio()
 //clickAudio.src ="ButtonSolid.mp3";
 
-//const questionRightSound = new Audio ("sounds/interface-124464.p3");
+const questionRightSound = new Audio ("sounds/interface-124464.mp3");
 //const questionWrongSound = new Audio ("sounds/buzze-or-wrong-answer-20582.mp3");
 //const buttonClick = new Audio ("sounds/ButtonSolid.mp3");
 var toggleMusic = 1;
@@ -25,6 +25,14 @@ let changeIcon = function(icon){
         backgroundMusic.play();
         toggleMusicP.innerHTML = 1;
 
+    }
+}
+function rightSoundEffects() {
+    if (audioPlaying) {
+        questionRightSound.volume = 0.3;
+        questionRightSound.play();
+    } else {
+        questionRightSound.pause();
     }
 }
 
