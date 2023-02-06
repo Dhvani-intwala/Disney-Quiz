@@ -151,10 +151,11 @@ i{
 
 .choice-container{
     display: flex;
+    height: 4rem;
     margin-bottom: 0.8rem;
-    border-radius: 4px;
+    border-radius: 10px;
     background-color: #0f0e0fbb;
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: 'Nova Square', cursive;
 
 }
@@ -165,12 +166,12 @@ i{
     transition: transform 100ms;
 }
 .choice-prefix{
-    padding: 2rem 2.5rem;
+    padding: 1.5rem 2rem;
     color: black;
     background-color: rgb(216, 224, 217);;
 }
 .choice-text{
-    padding: 2rem;
+    padding: 1.5rem;
     width:100%;
 }
 .container-quiz{
@@ -197,7 +198,7 @@ i{
 }
 .hud-prefix{
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: 'Nova Square', cursive;
 }
 
@@ -244,9 +245,8 @@ i{
 }
 .game-title a:hover{
     color: #0f0e0f;
-    
-
 }
+
 
 /* end page */
 
@@ -334,7 +334,7 @@ input::placeholder{
     margin-bottom: 0.5rem;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:900px){
     .choice-container{
         min-width: 40rem;
     }
