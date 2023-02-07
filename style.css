@@ -11,10 +11,11 @@
     box-sizing: border-box;
     font-size: 14px;
     color: rgb(246, 239, 239);
+    font-family: 'Nova Square', cursive;
 }
 
 html {
-   background-color:rgba(3, 60, 72, 0.796)
+   background-color:#054f5e;
    
 }
 main{
@@ -83,7 +84,7 @@ h2{
 h1{
     font-size: 3rem;
     color: #0f0e0f;
-    font-family: 'Nova Square', cursive;
+    font-family: 'Cinzel', sans-serif;
 }
 
 .container{
@@ -156,7 +157,7 @@ i{
     border-radius: 10px;
     background-color: #0f0e0fbb;
     font-size: 2rem;
-    font-family: 'Nova Square', cursive;
+   
 
 }
 .choice-container:hover{
@@ -181,13 +182,14 @@ i{
     padding: 2rem;
     margin:  1rem auto;
     width: 80rem;
+    
 }
 #game{
     width:100%;
 }
 
 .correct{
-    background: linear-gradient(32deg, rgba(11, 223,36) 0%, rgb(41,232,111)100%);
+    background: linear-gradient(32deg, rgb(11, 223, 36) 0%, rgb(41,232,111)100%);
 }
 .incorrect{
     background: linear-gradient(32deg, rgb(229, 14, 14) 0%, rgb(229, 14, 14)100%);
@@ -199,12 +201,12 @@ i{
 .hud-prefix{
     text-align: center;
     font-size: 2rem;
-    font-family: 'Nova Square', cursive;
+    
 }
 
 .hud-main-text{
     text-align: center;
-    font-family: 'Nova Square', cursive;
+   
 }
 #progressBar{
     width:20rem;
@@ -227,6 +229,7 @@ i{
 #question{
     margin-bottom: 2rem;
     font-size: 2rem;
+    font-family: 'Nova Square', cursive;
 }
 .game-title h1{
     text-align: center;

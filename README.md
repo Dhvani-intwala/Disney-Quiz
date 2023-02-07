@@ -12,7 +12,7 @@
 - [Purpose](#purpose)
 - [User Goal](#user-goal)
 ## [User experience (UX/UI)](#user-experience-uxui-1)
-- [Colour Palatte](#colorpalatte)
+- [Colour Palatte](#colour-palatte)
 - [Typography](#typography)
 - [Wireframe](#wireframe)
 ## Features
@@ -52,12 +52,64 @@ To achieve the strategic goals I implemented the following features:-
 ### **User Goal**
 - as a user i want to:
     - navigate easily through the page,
-    - see clean interface and be able to track progress/score,
+    - see a clean interface and be able to track progress/score,
     - know how many questions I have left to answer,
     - enjoy the game,
     - see my score after I answer the last question,
     - be able to re-play the game and compare my score
-    - As a user, I want a responsive site so I can play the game on any device
+    - As a user, I want a responsive site so I can play the game on any device.
+
+## User experience (UX/UI)
+### **Colour Palatte**
+- The palette was created using the [Coolors](https://coolors.co/) website.
+- I have used #033c48cb for background for all pages,       
+  #000000 and #fff both to color the text.
+- I have used #0bdf24 to display the correct answer.
+- I have used #e50e0e to display the wrong answers.
+![ screenshoot all colour](colour-palatte.png)
+
+### **Typography**
+- Google Fonts was used to import the chosen fonts for use in the website.
+    - For the Page title I have used the google font Cinzel.
+    - For the body page I have used the google font Nova Square cursive.
+
+### **Wireframe**
+- To create the wireframe I used the Balsamiq Wireframing Software.
+- Start page(Desktop)
+
+![ start page desktop in wireframe](desktop-wireframe.png)
+
+- Start page(Moblie)
+
+![ start page moblie in wireframe](mobile-wireframe.png)
+
+- Game page(Desktop)
+
+![ game page desktop in wireframe](gamepage-wireframe.png)
+
+- Game page(Moblie)
+
+![game page moblie in wireframe](gamepage-moblie-wireframe.png)
+
+- end page(Desktop)
+
+![end page desktop in wireframe](endpage-wireframe.png)
+
+- end page(moblie)
+
+![end page moblie in wireframe](endpage-moblie-wireframe.png)
+
+- Highscores page(Desktop)
+
+![highscore page desktop in wireframe](highscore-wireframe.png)
+
+- Highscores page(Desktop)
+
+![highscore page desktop in wireframe](highscore-moblie-wireframe.png)
+
+
+
+    
 
 
 
