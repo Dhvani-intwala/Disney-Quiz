@@ -4,7 +4,7 @@
 ### This is Disney world Quiz Game created as Portfolio Project #2 (JavaScript Essentials) for Diploma in Full Stack Software Development at Code Institute. It is an interactive front-end quiz app where user can test their knowledge about Disney world cartoons. The application is easy to use for the user, is responsive across a range of devices, and incorporates best practices regarding design and accessibility. 
 ### The game consists of 10 questions. If a player answers a question correctly, they will receive 100 bonus points. Upon completing the game, the user can save their high score and later look back on the top high scores for the game. 
 
-![responsive screenshoot for all devices](responsive-screen-Quiz.png)
+![responsive screenshoot for all devices](readme-img/responsive-screen-Quiz.png)
 
 # Table of content
 ----
@@ -15,12 +15,12 @@
 - [Colour Palatte](#colour-palatte)
 - [Typography](#typography)
 - [Wireframe](#wireframe)
-## Features
-- [Start page](#startpage)
-- [Game page](#gamepage)
-- [End page](#endpage)
-- [HighScore](#highScore)
-- [Future features to implement](#futurefeaturestoimplement)
+## [Features](#features-1)
+- [Start page](#start-page)
+- [Game page](#game-page)
+- [End page](#end-page)
+- [HighScore page](#highScore-page)
+- [Future features to implement](#future-features-to-implement)
 ## Technology Used
 - [Languages Used](#languagesused)
 - [Softwares Used](#softwaresused)
@@ -66,7 +66,7 @@ To achieve the strategic goals I implemented the following features:-
   #000000 and #fff both to color the text.
 - I have used #0bdf24 to display the correct answer.
 - I have used #e50e0e to display the wrong answers.
-![ screenshoot all colour](colour-palatte.png)
+![ screenshoot all colour](readme-img/colour-palatte.png)
 
 ### **Typography**
 - Google Fonts was used to import the chosen fonts for use in the website.
@@ -77,35 +77,43 @@ To achieve the strategic goals I implemented the following features:-
 - To create the wireframe I used the Balsamiq Wireframing Software.
 - Start page(Desktop)
 
-![ start page desktop in wireframe](desktop-wireframe.png)
+![ start page desktop in wireframe](readme-img/desktop-wireframe.png)
 
 - Start page(Moblie)
 
-![ start page moblie in wireframe](mobile-wireframe.png)
+![ start page moblie in wireframe](readme-img/mobile-wireframe.png)
 
 - Game page(Desktop)
 
-![ game page desktop in wireframe](gamepage-wireframe.png)
+![ game page desktop in wireframe](readme-img/gamepage-wireframe.png)
 
 - Game page(Moblie)
 
-![game page moblie in wireframe](gamepage-moblie-wireframe.png)
+![game page moblie in wireframe](readme-img/gamepage-moblie-wireframe.png)
 
 - end page(Desktop)
 
-![end page desktop in wireframe](endpage-wireframe.png)
+![end page desktop in wireframe](readme-img/endpage-wireframe.png)
 
 - end page(moblie)
 
-![end page moblie in wireframe](endpage-moblie-wireframe.png)
+![end page moblie in wireframe](readme-img/endpage-moblie-wireframe.png)
 
 - Highscores page(Desktop)
 
-![highscore page desktop in wireframe](highscore-wireframe.png)
+![highscore page desktop in wireframe](readme-img/highscore-wireframe.png)
 
 - Highscores page(Desktop)
 
-![highscore page desktop in wireframe](highscore-moblie-wireframe.png)
+![highscore page desktop in wireframe](readme-img/highscore-moblie-wireframe.png)
+
+## Features
+### **Start page**
+
+- The start page shows the game title along with the logo. 
+- Underneath the heading and logo are two buttons that offer the players the choice to either start the game or have a look at the top high scores.
+
+![screenshoot of the start page](readme-img/Start-page.png)
 
 
 
