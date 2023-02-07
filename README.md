@@ -1,47 +1,66 @@
 # Disney World Quiz Game
 ### Developer: Dhvani Intwala
 
-### This is Disney world Quiz Game created as Portfolio Project #2 (JavaScript Essentials) for Diploma in Full Stack Software Development at Code Institute. It is an interactive front-end quiz app where user can test their knowledge about Disney world cartoons. The application is easy to use for the user, is responsive across a range of devices, and incorporates best practices regarding design and accessibility. The game consists of 10 questions. If a player answers a question correctly, they will receive 100 bonus points. Upon completing the game, the user can save their high score and later look back on the top high scores for the game. 
+### This is Disney world Quiz Game created as Portfolio Project #2 (JavaScript Essentials) for Diploma in Full Stack Software Development at Code Institute. It is an interactive front-end quiz app where user can test their knowledge about Disney world cartoons. The application is easy to use for the user, is responsive across a range of devices, and incorporates best practices regarding design and accessibility. 
+### The game consists of 10 questions. If a player answers a question correctly, they will receive 100 bonus points. Upon completing the game, the user can save their high score and later look back on the top high scores for the game. 
 
 ![responsive screenshoot for all devices](responsive-screen-Quiz.png)
 
 # Table of content
 ----
-## Project
-- [Purpose](#purpose-1)
-- [User Goal](#userGoal-1)
-## User experience (UX/UI)
-- [Colour Palatte](#colorpalatte-1)
-- [Typography](#typography-1)
-- [Wireframe](#wireframe-1)
+## [Project](#project-1)
+- [Purpose](#purpose)
+- [User Goal](#user-goal)
+## [User experience (UX/UI)](#user-experience-uxui-1)
+- [Colour Palatte](#colorpalatte)
+- [Typography](#typography)
+- [Wireframe](#wireframe)
 ## Features
-- [Start page](#startpage-1)
-- [Game page](#gamepage-1)
-- [End page](#endpage-1)
-- [HighScore](#highScore-1)
-- [Future Features to implement](#futurefeaturestoimplement-1)
+- [Start page](#startpage)
+- [Game page](#gamepage)
+- [End page](#endpage)
+- [HighScore](#highScore)
+- [Future features to implement](#futurefeaturestoimplement)
 ## Technology Used
-- [Languages Used](#languagesused-1)
-- [Softwares Used](#softwaresused-1)
+- [Languages Used](#languagesused)
+- [Softwares Used](#softwaresused)
 ## Testing 
-- [Accessibility](#accessibility-1)
-- [Performance](#performance-1)
-- [Validation](#validation-1)
-    - [HTML](#html-1)
-    - [CSS](#css-1)
-    - [JAVA SCRIPT](#javascript-1)
-- [Browser compatibility](#browsercompatibility-1)
-- [Responsiveness](#responsiveness-1)
-- [Peer Review](#peerreview-1)
-    - [Bugs Found / Solved](#bugsfound/solved)
+- [Accessibility](#accessibility)
+- [Performance](#performance)
+- [Validation](#validation)
+    - [HTML](#html)
+    - [CSS](#css)
+    - [JAVA SCRIPT](#javascript)
+- [Browser compatibility](#browsercompatibility)
+- [Responsiveness](#responsiveness)
+- [Peer Review](#peerreview)
+    - [Bugs Found and Solved](#bugsfoundandsolved)
 ## Deployment
 ## Credits
 ## Acknowledgment
 
 ----
-
-## Project
+## project 
 ### **Purpose**
+The aim of this project is to deliver an interactive, engaging quiz that is visually and functionally satisfying for the user to play.
+This ten-question quiz game was designed for fans of Disney world to test their knowledge and make a competition quiz game with other user friends/family by comparing their High scores.
+To achieve the strategic goals I implemented the following features:-
+- simple website layout with the content located in the center of the viewport
+- easy to click buttons both on computers and mobile touch interfaces
+- eye-pleasing graphics to make the experience entertaining.
+
+### **User Goal**
+- as a user i want to:
+    - navigate easily through the page,
+    - see clean interface and be able to track progress/score,
+    - know how many questions I have left to answer,
+    - enjoy the game,
+    - see my score after I answer the last question,
+    - be able to re-play the game and compare my score
+    - As a user, I want a responsive site so I can play the game on any device
+
+
+
 
 
 
