@@ -128,6 +128,17 @@ To achieve the strategic goals I implemented the following features:-
 
 ![screenshoot of the game page](readme-img/game-page.png)
 
+### **End page**
+
+
+### **HighScores page**
+
+### **Future features to implement**
+
+- Having different Difficulty level
+- Quit button in between the Quiz
+- Countdown timer
+
 
 
     
