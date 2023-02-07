@@ -115,6 +115,19 @@ To achieve the strategic goals I implemented the following features:-
 
 ![screenshoot of the start page](readme-img/Start-page.png)
 
+### **game page**
+
+- The game page shows a question and gives the player 4 answer choices to choose from.
+- On hover, the answer option bars will expand, creating a more visual representation of what is about to be selected
+- When the user plays the game, and if the user gives the wrong answer, the quiz will not show the correct answer, this would make the user more curious, and the user would like to know the Correct answer. Thus making the quiz more interesting, and the user will play the game again to achieve high scores.
+- A score count adds hundreds (100) each time the user selects a correct answer. The scoreboard will appear on the top right-hand side during the quiz. 
+- Option will turn green if the user selects the correct answer. 
+- Option will turn red if the user selects the incorrect answer. 
+- On the top left-hand side, progress bar is shown, which will update the user on which questions the user is and how many remaining questions are still left.
+
+
+![screenshoot of the game page](readme-img/game-page.png)
+
 
 
     
