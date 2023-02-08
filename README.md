@@ -21,9 +21,9 @@
 - [End page](#end-page)
 - [HighScore page](#highScore-page)
 - [Future features to implement](#future-features-to-implement)
-## Technology Used
-- [Languages Used](#languagesused)
-- [Softwares Used](#softwaresused)
+## [Technology Used](#technology-used-1)
+- [Languages Used](#languages-used)
+- [Softwares Used](#softwares-used)
 ## Testing 
 - [Accessibility](#accessibility)
 - [Performance](#performance)
@@ -130,14 +130,41 @@ To achieve the strategic goals I implemented the following features:-
 
 ### **End page**
 
+![screenshoot of the end page](readme-img/end-page.png)
 
 ### **HighScores page**
+
+![screenshoot of the highScore page](readme-img/high-scores-page.png)
 
 ### **Future features to implement**
 
 - Having different Difficulty level
 - Quit button in between the Quiz
 - Countdown timer
+
+## Technology Used
+### **Languages Used**
+
+- The Project was written using HTML , CSS and Javascrpit.
+
+### **Softwares Used**
+
+- [Google](https://fonts.google.com/) Fonts for fonts.
+- [Coolors](https://coolors.co/) website was used to generate a color theme.
+- [Gitpod](https://www.gitpod.io/) was used to write and test the code.
+- [Font Awesome](https://fontawesome.com/) was used as a resource for free icons.
+- [Balsamiq Wireframe](https://www.balsamiq.com/) – Used to create wireframes for the website
+- Microsoft Powertoys - Used to optimise and resize images for screen.
+- [Tiny PNG](https://tinypng.com) - Used to further compress optimised images.
+- Snipping Tool -  Used to crop Images
+- Google Chrome DevTools - Used to debug and test responsiveness of the site
+- GitHub - Used to host and deploy the website.
+- [Convertio.co](https://convertio.co) - used to convert images to next-gen *webp format
+- Free Formatter - used for formatting html and css documents for optimal readability.
+- [techsini](https://techsini.com/multi-mockup/)- online tool used to create mockup to present responsive design of this project.
+- Lighthouse - Google WebDev tool used for performance/accesibility testing.
+
+
 
 
 
