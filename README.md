@@ -4,7 +4,7 @@
 ### This is Disney world Quiz Game created as Portfolio Project #2 (JavaScript Essentials) for Diploma in Full Stack Software Development at Code Institute. It is an interactive front-end quiz app where user can test their knowledge about Disney world cartoons. The application is easy to use for the user, is responsive across a range of devices, and incorporates best practices regarding design and accessibility. 
 ### The game consists of 10 questions. If a player answers a question correctly, they will receive 100 bonus points. Upon completing the game, the user can save their high score and later look back on the top high scores for the game. 
 
-![responsive screenshoot for all devices](readme-img/responsive-screen-Quiz.png)
+![responsive screenshoot for all devices](assets/readme-img/responsive-screen-Quiz.png)
 
 # Table of content
 ----
@@ -24,7 +24,7 @@
 ## [Technology Used](#technology-used-1)
 - [Languages Used](#languages-used)
 - [Softwares Used](#softwares-used)
-## Testing 
+## [Testing](#testing-1)
 - [Accessibility](#accessibility)
 - [Performance](#performance)
 - [Validation](#validation)
@@ -77,35 +77,35 @@ To achieve the strategic goals I implemented the following features:-
 - To create the wireframe I used the Balsamiq Wireframing Software.
 - Start page(Desktop)
 
-![ start page desktop in wireframe](readme-img/desktop-wireframe.png)
+![ start page desktop in wireframe](assets/readme-img/desktop-wireframe.png)
 
 - Start page(Moblie)
 
-![ start page moblie in wireframe](readme-img/mobile-wireframe.png)
+![ start page moblie in wireframe](assets/readme-img/mobile-wireframe.png)
 
 - Game page(Desktop)
 
-![ game page desktop in wireframe](readme-img/gamepage-wireframe.png)
+![ game page desktop in wireframe](assets/readme-img/gamepage-wireframe.png)
 
 - Game page(Moblie)
 
-![game page moblie in wireframe](readme-img/gamepage-moblie-wireframe.png)
+![game page moblie in wireframe](assets/readme-img/gamepage-moblie-wireframe.png)
 
 - end page(Desktop)
 
-![end page desktop in wireframe](readme-img/endpage-wireframe.png)
+![end page desktop in wireframe](assets/readme-img/endpage-wireframe.png)
 
 - end page(moblie)
 
-![end page moblie in wireframe](readme-img/endpage-moblie-wireframe.png)
+![end page moblie in wireframe](assets/readme-img/endpage-moblie-wireframe.png)
 
 - Highscores page(Desktop)
 
-![highscore page desktop in wireframe](readme-img/highscore-wireframe.png)
+![highscore page desktop in wireframe](assets/readme-img/highscore-wireframe.png)
 
 - Highscores page(Desktop)
 
-![highscore page desktop in wireframe](readme-img/highscore-moblie-wireframe.png)
+![highscore page desktop in wireframe](assets/readme-img/highscore-moblie-wireframe.png)
 
 ## Features
 ### **Start page**
@@ -113,7 +113,7 @@ To achieve the strategic goals I implemented the following features:-
 - The start page shows the game title along with the logo. 
 - Underneath the heading and logo are two buttons that offer the players the choice to either start the game or have a look at the top high scores.
 
-![screenshoot of the start page](readme-img/Start-page.png)
+![screenshoot of the start page](assets/readme-img/Start-page.png)
 
 ### **game page**
 
@@ -126,15 +126,15 @@ To achieve the strategic goals I implemented the following features:-
 - On the top left-hand side, progress bar is shown, which will update the user on which questions the user is and how many remaining questions are still left.
 
 
-![screenshoot of the game page](readme-img/game-page.png)
+![screenshoot of the game page](assets/readme-img/game-page.png)
 
 ### **End page**
 
-![screenshoot of the end page](readme-img/end-page.png)
+![screenshoot of the end page](assets/readme-img/end-page.png)
 
 ### **HighScores page**
 
-![screenshoot of the highScore page](readme-img/high-scores-page.png)
+![screenshoot of the highScore page](assets/readme-img/high-scores-page.png)
 
 ### **Future features to implement**
 
