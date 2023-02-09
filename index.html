@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Description" content="">
     <title>Disney World Quiz</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="../assets/css/style.css">
+   <link rel="shortcut icon" href="favicon.ico" type="image/webp">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
     <script src="https://kit.fontawesome.com/b7114f05a1.js" crossorigin="anonymous"></script>
 
 </head>
@@ -20,8 +20,8 @@
         <h1 class="title"> Disney world Quiz</h1>
     
         <div class="audio-icon-button">
-            <i class="fas fa-volume-up audio-on hide" onclick="changeIcon(this)"></i>
-            <p style="display: none;" class="audiop">1</p>
+            <i class="fas fa-volume-up fa-volume-off audio-on hide" onclick="changeIcon(this)"></i>
+            <p style="display: none;" id="audiop">0</p>
         </div>
     
 
@@ -33,7 +33,7 @@
             </div>
         </div>
 
-        <script src="assets/js/quiz-audio.js"></script>
+        <script src="../../assets/js/quiz-audio.js"></script>
     </main>
 </body>
 </html>

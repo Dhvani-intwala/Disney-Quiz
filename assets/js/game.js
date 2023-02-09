@@ -1,17 +1,4 @@
-const question =document.querySelector("#question");
-const choices = Array.from(document.querySelectorAll('.choice-text'));
-const progressText =document.querySelector("#progresstext");
-const scoreText =document.querySelector("#score");
-const progresssbarFull =document.querySelector("#progressBarFull");
-
-
-let currentQuestion ={};
-let acceptingAnswers = true;
-let score = 0;
-let questionCounter = 0;
-let avaliableQuestions = [];
-
-let questions = [
+let QUESTIONS = [
     {
         question:'What year did Disneyland open?',
         choice1: '1955',
@@ -103,69 +90,116 @@ let questions = [
 const SCORE_POINTS = 100;
 const MAX_QUESTIONS = 10;
 
-startGame = () => {
-    questionCounter = 0;
-    score = 0;
-    avaliableQuestions = [...questions];
-    getNewQuestion();
+let currentQuestion ={};
+let acceptingAnswers = true;
+let score = 0;
+let questionIndex = 0;
+let availableQuestions = [];
 
+const question =document.querySelector("#question");
+const choices = Array.from(document.querySelectorAll('.choice-text'));
+const progressText =document.querySelector("#progresstext");
+const scoreText =document.querySelector("#score");
+const progresssbarFull =document.querySelector("#progressBarFull");
+const questionRightSound = new Audio ("sounds/interface-124464.mp3");
+const questionWrongSound = new Audio ("sounds/buzzer-or-wrong-answer-20582.mp3");
+
+function startGame()  {
+    questionIndex = 0;
+    score = 0;
+    availableQuestions = [...QUESTIONS];
+    availableQuestions = shuffle(availableQuestions);
+    getNewQuestion();
 }
 
-getNewQuestion = () => {
-    if(avaliableQuestions.length === 0 || questionCounter > MAX_QUESTIONS){
-        localStorage.setItem('mostRecentScore', score);
+function shuffle(list) {
+   return list.sort(() => Math.random() - 0.5);
+  }
 
+  
+function updateProgressText() {
+    progressText.innerText = `Question ${questionIndex + 1} of ${MAX_QUESTIONS}`;
+    progresssbarFull.style.width = `${((questionIndex + 1)/MAX_QUESTIONS) * 100}%`;
+}
+
+function getNewQuestion() {
+    if(questionIndex > MAX_QUESTIONS) {
+        // Put this as part of game.html
+        localStorage.setItem('mostRecentScore', score);
         return window.location.assign('/end.html');
     }
 
-    questionCounter++;
-    progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
-    progresssbarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`;
-
-    const questionIndex = Math.floor(Math.random () * avaliableQuestions.length);
-    currentQuestion = avaliableQuestions[questionIndex];
+    
+    updateProgressText();
+    currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
 
+    // Display options
     choices.forEach(choice => {
         const number = choice.dataset['number'];
         choice.innerText = currentQuestion ['choice' + number];
-    })
-
-    avaliableQuestions.splice(questionIndex, 1);
+    });
 
     acceptingAnswers = true;
-
+    questionIndex++;
 }
-choices.forEach(choice => {
-    choice.addEventListener('click', e => {
-        if (!acceptingAnswers) return;
 
-        acceptingAnswers = false;
-       const selectedChoice = e.target;
-        const selectedAnswer = selectedChoice.dataset['number'];
+function playCorrectSoundMusic() {
+    questionRightSound.play();
+    const timeoutRef = setTimeout(() => {
+        questionRightSound.pause();
+        clearTimeout(timeoutRef);
+    }, 1000);
+}
+function playIncorrectSoundMusic(){
+    questionWrongSound.play();
+     timeoutRef = setTimeout(() =>{
+        questionWrongSound.pause();
+        clearTimeout(timeoutRef);
+    },1000);
+}
 
-        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
-        
-        if(classToApply === 'correct') {
-            incrementScore(SCORE_POINTS);
-        }
-        console.log(classToApply);
-        selectedChoice.parentElement.classList.add(classToApply);
+function initEventListeners() {
+    choices.forEach(choice => {
+        choice.addEventListener('click', e => {
+            if (!acceptingAnswers) return;
 
-        setTimeout( () => {
-            selectedChoice.parentElement.classList.remove(classToApply);
-            getNewQuestion();
+            acceptingAnswers = false;
 
-        }, 1000)
-    
+            const selectedChoice = e.target;
+            const selectedAnswer = selectedChoice.dataset['number'];
+
+            let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+            
+            if(classToApply === 'correct') {
+                incrementScore(SCORE_POINTS);
+                playCorrectSoundMusic();
+            }else{
+                playIncorrectSoundMusic()
+            }
+
+            console.log(classToApply);
+           
+            selectedChoice.parentElement.classList.add(classToApply);
+
+            const timeoutRef = setTimeout( () => {
+                selectedChoice.parentElement.classList.remove(classToApply);
+                getNewQuestion();
+                clearTimeout(timeoutRef);
+            }, 1000)
+        })
     })
-})
+}
 
-    incrementScore = (num) => {
-        score +=num;
-        scoreText.innerText = score;
-    }
+function incrementScore(num) {
+    score +=num;
+    scoreText.innerText = score;
+}
 
+function main() {
+    initEventListeners();
     startGame();
+    4
+}
 
-
+main();

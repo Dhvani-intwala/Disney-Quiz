@@ -181,7 +181,6 @@ i{
     align-items: center;
     padding: 2rem;
     margin:  1rem auto;
-    width: 80rem;
     
 }
 #game{
@@ -233,7 +232,7 @@ i{
 }
 .game-title h1{
     text-align: center;
-   margin-top: 40px;
+   margin-top: 20px;
    margin-bottom: 10px;
 }
 .gamepage-btn{
@@ -340,10 +339,29 @@ input::placeholder{
     margin-bottom: 0.5rem;
 }
 
-@media screen and (max-width:900px){
-    .choice-container{
-        min-width: 40rem;
+@media screen and (min-width:375px){
+
+    .container-quiz{
+        width:90%;
     }
+    #progresstext{
+        width: 10rem;
+    }
+    #progressBar{
+        width: 10rem;
+    }
+}
+@media screen and (min-width:768px){
+    #progresstext{
+        width: 20rem;
+    }
+    #progressBar{
+        width: 20rem;
+    }
+    .container-quiz{
+        width:70%;
+    }
+
 }
 
 
