@@ -101,8 +101,8 @@ const choices = Array.from(document.querySelectorAll('.choice-text'));
 const progressText =document.querySelector("#progresstext");
 const scoreText =document.querySelector("#score");
 const progresssbarFull =document.querySelector("#progressBarFull");
-const questionRightSound = new Audio ("sounds/interface-124464.mp3");
-const questionWrongSound = new Audio ("sounds/buzzer-or-wrong-answer-20582.mp3");
+const questionRightSound = new Audio ("assets/sounds/interface-124464.mp3");
+const questionWrongSound = new Audio ("assets/sounds/buzzer-or-wrong-answer-20582.mp3");
 
 function startGame()  {
     questionIndex = 0;
@@ -149,7 +149,7 @@ function playCorrectSoundMusic() {
     const timeoutRef = setTimeout(() => {
         questionRightSound.pause();
         clearTimeout(timeoutRef);
-    }, 1000);
+    }, 3000);
 }
 function playIncorrectSoundMusic(){
     questionWrongSound.play();
@@ -209,7 +209,6 @@ function incrementScore(num) {
 function main() {
     initEventListeners();
     startGame();
-    4
 }
 
 main();
