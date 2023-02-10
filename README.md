@@ -75,37 +75,53 @@ To achieve the strategic goals I implemented the following features:-
 
 ### **Wireframe**
 - To create the wireframe I used the Balsamiq Wireframing Software.
-- Start page(Desktop)
+<details>
+<summary>Start page(Desktop)</summary>
 
 ![ start page desktop in wireframe](assets/readme-img/desktop-wireframe.png)
+</details>
 
-- Start page(Moblie)
+<details>
+<summary> Start page(Moblie)</summary>
 
 ![ start page moblie in wireframe](assets/readme-img/mobile-wireframe.png)
 
-- Game page(Desktop)
+</details>
+<details>
+<summary> Game page(Desktop)</summary>
 
 ![ game page desktop in wireframe](assets/readme-img/gamepage-wireframe.png)
 
-- Game page(Moblie)
+</details>
+<details>
+<summary> Game page(Moblie)</summary>
 
 ![game page moblie in wireframe](assets/readme-img/gamepage-moblie-wireframe.png)
-
-- end page(Desktop)
+</details>
+<details>
+<summary> end page(Desktop)</summary>
 
 ![end page desktop in wireframe](assets/readme-img/endpage-wireframe.png)
-
-- end page(moblie)
+</details>
+<details>
+<summary>end page(moblie)</summary>
 
 ![end page moblie in wireframe](assets/readme-img/endpage-moblie-wireframe.png)
+</details>
 
-- Highscores page(Desktop)
+<details>
+<summary> Highscores page(Desktop)</summary>
 
 ![highscore page desktop in wireframe](assets/readme-img/highscore-wireframe.png)
 
-- Highscores page(Desktop)
+</details>
+<details>
+<summary> Highscores page(Desktop)</summary>
 
 ![highscore page desktop in wireframe](assets/readme-img/highscore-moblie-wireframe.png)
+
+</details>
+<br>
 
 ## Features
 ### **Start page**
@@ -164,7 +180,57 @@ To achieve the strategic goals I implemented the following features:-
 - [techsini](https://techsini.com/multi-mockup/)- online tool used to create mockup to present responsive design of this project.
 - Lighthouse - Google WebDev tool used for performance/accesibility testing.
 
+## Testing 
 
+Testing was performed across a range of devices, including:
+
+
+
+### **Validation**
+### **HTML**
+
+<details>
+<summary> Index page</summary>
+
+![screenshoot of index html validator](/assets/readme-img/indexpage-validator.png)
+
+</details>
+<details>
+<summary> Gmae page</summary>
+
+![screenshoot of game html validator](/assets/readme-img/game-page-validator.png)
+
+</details>
+<details>
+<summary> End page</summary>
+
+![screenshoot of end html validator](/assets/readme-img/end-page-validator.png)
+
+</details>
+<details>
+<summary> Highscore page</summary>
+
+![screenshoot of highscore html validator](/assets/readme-img/high-scores-validator.png)
+
+</details>
+<br>
+
+### **CSS**
+<details>
+<summary> Stylesheet</summary>
+
+![screenshoot of stylesheet validator](/assets/readme-img/CSS-validetor.png)
+
+</details>
+
+### **JAVA SCRIPT**
+
+<details>
+<summary> game js</summary>
+
+![screenshoot of game js validator]()
+
+</details>
 
 
 

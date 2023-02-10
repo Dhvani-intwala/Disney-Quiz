@@ -123,10 +123,10 @@ function updateProgressText() {
 }
 
 function getNewQuestion() {
-    if(questionIndex > MAX_QUESTIONS) {
+    if(questionIndex >= MAX_QUESTIONS) {
         // Put this as part of game.html
         localStorage.setItem('mostRecentScore', score);
-        return window.location.assign('/end.html');
+        return window.location.assign('../end.html');
     }
 
     
@@ -158,6 +158,15 @@ function playIncorrectSoundMusic(){
         clearTimeout(timeoutRef);
     },1000);
 }
+function actualCorractAnswer(currentQuestionAnswer){
+    console.log(currentQuestionAnswer+"here");
+    console.log(choices);
+    choices[currentQuestionAnswer - 1].parentElement.classList.add('correct');
+    const timeoutRef = setTimeout ( () =>{
+        choices[currentQuestionAnswer - 1 ].parentElement.classList.remove('correct');
+        clearTimeout(timeoutRef);
+    }, 2000)
+}
 
 function initEventListeners() {
     choices.forEach(choice => {
@@ -175,7 +184,8 @@ function initEventListeners() {
                 incrementScore(SCORE_POINTS);
                 playCorrectSoundMusic();
             }else{
-                playIncorrectSoundMusic()
+                playIncorrectSoundMusic();
+                actualCorractAnswer(currentQuestion.answer);
             }
 
             console.log(classToApply);
@@ -186,7 +196,7 @@ function initEventListeners() {
                 selectedChoice.parentElement.classList.remove(classToApply);
                 getNewQuestion();
                 clearTimeout(timeoutRef);
-            }, 1000)
+            }, 2000)
         })
     })
 }

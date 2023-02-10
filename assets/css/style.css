@@ -12,6 +12,7 @@
     font-size: 14px;
     color: rgb(246, 239, 239);
     font-family: 'Nova Square', cursive;
+    
 }
 
 html {
@@ -37,8 +38,8 @@ h2{
 .logo{
     display: block;
     margin: auto;
-    width: 10rem;
-    height: 10rem;
+    width: 15rem;
+    height: 15rem;
     margin-top: 10%;
     
 }
@@ -83,7 +84,7 @@ h2{
 }
 h1{
     font-size: 3rem;
-    color: #0f0e0f;
+    color: white;
     font-family: 'Cinzel', sans-serif;
 }
 
@@ -226,9 +227,11 @@ i{
 }
 
 #question{
+    margin-top: 2rem;
     margin-bottom: 2rem;
     font-size: 2rem;
     font-family: 'Nova Square', cursive;
+    color: white;
 }
 .game-title h1{
     text-align: center;
@@ -346,17 +349,31 @@ input::placeholder{
     }
     #progresstext{
         width: 10rem;
+        font-size: 1.5rem;
     }
     #progressBar{
         width: 10rem;
     }
+    
+    .hud-item{
+        font-size: 1.5rem;
+    }
+    #score{
+        font-size: 1.5rem;
+    }
+    #question{
+        text-align:center;
+    }
+
 }
 @media screen and (min-width:768px){
     #progresstext{
         width: 20rem;
     }
     #progressBar{
-        width: 20rem;
+        width: 15rem;
+        margin: auto;
+        margin-top: 10px;
     }
     .container-quiz{
         width:70%;
