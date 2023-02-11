@@ -35,10 +35,10 @@
 - [Responsiveness](#responsiveness)
 - [Peer Review](#peerreview)
     - [Bugs Found and Solved](#bugsfoundandsolved)
-## Deployment(#deployment-1)
-## Credits(#credits-1)
-## Content(#content-1)
-## Acknowledgment(#acknowledgment-1)
+## [Deployment](#deployment-1)
+## [Credits](#credits-1)
+## [Content](#content-1)
+## [Acknowledgment](#acknowledgment-1)
 
 ----
 ## project 
@@ -238,7 +238,7 @@ Laptop-1024px) using the Devtools service toolbar. The different CSS properties 
 ![screenshoot of highscore html validator](/assets/readme-img/high-scores-validator.png)
 
 </details>
-<br>
+
 
 ### **CSS**
 <details>
@@ -247,7 +247,6 @@ Laptop-1024px) using the Devtools service toolbar. The different CSS properties 
 ![screenshoot of stylesheet validator](/assets/readme-img/CSS-validetor.png)
 
 </details>
-<br>
 
 ### **JAVA SCRIPT**
 
@@ -270,6 +269,26 @@ This  branch was deployed using GitHub pages.
 5. Click on "Check it out here".
 6. Select the main branch and select "save".
 7. The link to the live website was ready on the top.
+
+## Credits
+
+- [W3Schools](https://www.w3schools.com)
+- [Stack Overflow](https://www.stackoverflow.co/)  
+
+
+## Contents
+
+- All the question provided in the game were taken from one online quiz.
+
+- [Disney World Quiz](https://www.w3schools.com)
+
+## Acknowledgements
+
+At first, I would like to thank my mentor Mr. Akshat Garg for helping me during my second project with HTML , CSS and javascript  by providing good guidance and suggesting things which has helped me in eliminating bugs and making a good website. With my commitment and positive approach, not only I completed my second project but had also learned many new cool stuffs in making websites. Moreover, I would also like to thank Slack Team who were always there to keep me motivated throughout my project.
+
+
+
+
 
 
     
