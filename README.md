@@ -184,15 +184,31 @@ To achieve the strategic goals I implemented the following features:-
 
 Testing was performed across a range of devices, including:
 
+- All website pages have been tested on different browsers: Chrome, Edge, and Safari.
+- When a nav element is clicked, it provides the navigation link to the respective page.
+- The responsiveness of the website on different screen sizes (Mobile S-320px, Mobile M-375px, Mobile L-425px, Tablet-768px,
+Laptop-1024px) using the Devtools service toolbar. The different CSS properties for font, color, background color, links, submit button work as expected.
+- Inside the footer, social media is linked when clicked on it,the link directs to the respective social media page.
+
 ### **Performance**
 
 - Lighthouse
 
+- Desktop Startpage results:
+
 ![screenshoot of start page lighthouse performance](/assets/readme-img/lighthouse-performance.png)
 
-![screenshoot of quiz page lighthouse performance](/assets/readme-img/game-lighthouse-performance.png)
+- Desktop gamepage results:
 
+![screenshoot of game page lighthouse performance](/assets/readme-img/game-lighthouse-performance.png)
 
+- Desktop Endpage results:
+
+![screenshoot of end page lighthouse performance](/assets/readme-img/endpage-lighthouse-performance.png)
+
+- Mobile gamepage results:
+
+![screenshoot of game page lighthouse performance moblie](/assets/readme-img/moblie-lighthouse-gamepage1.png)
 
 ### **Validation**
 ### **HTML**
@@ -240,6 +256,11 @@ Testing was performed across a range of devices, including:
 
 </details>
 
+### **JAVA SCRIPT**
+
+- All javacript files were validated through jsHint, presenting no errorrs.
+
+![screenshoot of  jshint](/assets/readme-img/jshint.png)
 
 
     
