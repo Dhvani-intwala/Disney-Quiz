@@ -30,14 +30,15 @@
 - [Validation](#validation)
     - [HTML](#html)
     - [CSS](#css)
-    - [JAVA SCRIPT](#javascript)
+    - [JAVA SCRIPT](#java-script)
 - [Browser compatibility](#browsercompatibility)
 - [Responsiveness](#responsiveness)
 - [Peer Review](#peerreview)
     - [Bugs Found and Solved](#bugsfoundandsolved)
-## Deployment
-## Credits
-## Acknowledgment
+## Deployment(#deployment-1)
+## Credits(#credits-1)
+## Content(#content-1)
+## Acknowledgment(#acknowledgment-1)
 
 ----
 ## project 
@@ -246,21 +247,29 @@ Laptop-1024px) using the Devtools service toolbar. The different CSS properties 
 ![screenshoot of stylesheet validator](/assets/readme-img/CSS-validetor.png)
 
 </details>
-
-### **JAVA SCRIPT**
-
-<details>
-<summary> game js</summary>
-
-![screenshoot of game js validator]()
-
-</details>
+<br>
 
 ### **JAVA SCRIPT**
 
 - All javacript files were validated through jsHint, presenting no errorrs.
 
 ![screenshoot of  jshint](/assets/readme-img/jshint.png)
+
+
+## Deployment
+
+The Website  develpment was created in the "main" branch.
+This  branch was deployed using GitHub pages.
+
+- This site was deployed by completing the following steps:
+
+1. Open GitHub.
+2. Click on the project to be deployed.
+3. Navigate to the "settings".
+4. Navigate down to the "GitHub Pages".
+5. Click on "Check it out here".
+6. Select the main branch and select "save".
+7. The link to the live website was ready on the top.
 
 
     
