@@ -31,7 +31,7 @@
     - [HTML](#html)
     - [CSS](#css)
     - [JAVA SCRIPT](#java-script)
-- [Browser compatibility](#browsercompatibility)
+- [Browser compatibility](#browser-compatibility)
 - [Responsiveness](#responsiveness)
 - [Peer Review](#peerreview)
     - [Bugs Found and Solved](#bugsfoundandsolved)
@@ -253,6 +253,20 @@ Laptop-1024px) using the Devtools service toolbar. The different CSS properties 
 - All javacript files were validated through jsHint, presenting no errorrs.
 
 ![screenshoot of  jshint](/assets/readme-img/jshint.png)
+
+### **Browser compatibility**
+
+Website was tested manually on following browsers:
+- Google Chrome
+- Edge
+- Firefox
+- Safari
+
+The results were satisfactory on all browsers.
+
+## **Responsiveness**
+
+
 
 
 ## Deployment
