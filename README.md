@@ -268,8 +268,9 @@ The results were satisfactory on all browsers.
 
 I confirmed that this wesite is responsive and all the function are displayed correctly.
 
-![screenshoot of  start page responsive site](/assets/readme-img/start-page-moblie.png)
-![screenshoot of  quiz page responsive site](/assets/readme-img/quiz-page-2.png)
+![screenshoot of  responsive site 1](/assets/readme-img/Screenshot-responsiv-1.png)
+
+![screenshoot of  responsive site 2](/assets/readme-img/Screenshot-responsiv-2.png)
 
 
 
