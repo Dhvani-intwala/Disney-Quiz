@@ -146,10 +146,19 @@ To achieve the strategic goals I implemented the following features:-
 ![screenshoot of the game page](assets/readme-img/game-page.png)
 
 ### **End page**
+- At the end of the 10th question, the user will be brought automatically to the end page where the user can see his score, and if the user wants to save his score, he/she can save his score by inserting their username and clicking the save button.
+- User cannot save their score unless and until they enter a username.
+- When the user doesn’t want to save their score, they also have the option to skip this step by clicking on the home button.
+- If the user wants to replay the game, they can click on the play again button.
 
 ![screenshoot of the end page](assets/readme-img/end-page.png)
 
 ### **HighScores page**
+
+- As the title says, the high score page will display the score of users. The user can go to this page even before starting the quiz by clicking on the high score button. This was done intentionally so that the user can see another user's high score and can try to compete with other users by scoring more scores.
+- The high scores are stored using local storage and are sorted in descending order and cut off at the first 5 high scores, with the username entered displayed alongside the score.
+- From the high scores screen, the user can navigate back to the home screen via the go home button.
+
 
 ![screenshoot of the highScore page](assets/readme-img/high-scores-page.png)
 
@@ -190,6 +199,20 @@ Testing was performed across a range of devices, including:
 - The responsiveness of the website on different screen sizes (Mobile S-320px, Mobile M-375px, Mobile L-425px, Tablet-768px,
 Laptop-1024px) using the Devtools service toolbar. The different CSS properties for font, color, background color, links, submit button work as expected.
 - Inside the footer, social media is linked when clicked on it,the link directs to the respective social media page.
+
+### **Function Testing**
+
+| Page | Test | Successfully Completed |
+| :----| :---| :----------------------:|
+| All  | Logo image links back to homepage | Yes |
+| All  | Navigation links go to relevant page | Yes |
+| All  | Call to action buttons link to relevant page | Yes |
+| All  | Images and icons load | Yes |
+| Game | score and attempts correctly increase with gameplay | Yes |
+| Game | The scrambled word shows with jumbled letters | Yes |
+| Game | The check answer button works and returns the correct modal informing the player if their answer is correct/incorrect | Yes |
+| Game | The clue on/off toggle works showing the clue when on and removing it when off | Yes |
+<br>
 
 ### **Performance**
 
