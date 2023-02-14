@@ -67,7 +67,8 @@ To achieve the strategic goals I implemented the following features:-
   #000000 and #fff both to color the text.
 - I have used #0bdf24 to display the correct answer.
 - I have used #e50e0e to display the wrong answers.
-![ screenshoot all colour](readme-img/colour-palatte.png)
+
+![ screenshoot all colour](assets/readme-img/colour-palatte.png)
 
 ### **Typography**
 - Google Fonts was used to import the chosen fonts for use in the website.
@@ -209,9 +210,7 @@ Laptop-1024px) using the Devtools service toolbar. The different CSS properties 
 | All  | Call to action buttons link to relevant page | Yes |
 | All  | Images and icons load | Yes |
 | Game | score and attempts correctly increase with gameplay | Yes |
-| Game | The scrambled word shows with jumbled letters | Yes |
 | Game | The check answer button works and returns the correct modal informing the player if their answer is correct/incorrect | Yes |
-| Game | The clue on/off toggle works showing the clue when on and removing it when off | Yes |
 <br>
 
 ### **Performance**

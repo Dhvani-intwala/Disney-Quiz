@@ -1,3 +1,4 @@
+/****  Game Questions ****/
 let QUESTIONS = [
     {
         question:'What year did Disneyland open?',
@@ -86,6 +87,7 @@ let QUESTIONS = [
 
     },
 ]
+// Declare const and variables for DOM elements
 
 const SCORE_POINTS = 100;
 const MAX_QUESTIONS = 10;
@@ -104,6 +106,8 @@ const progresssbarFull =document.querySelector("#progressBarFull");
 const questionRightSound = new Audio ("assets/sounds/interface-124464.mp3");
 const questionWrongSound = new Audio ("assets/sounds/buzzer-or-wrong-answer-20582.mp3");
 
+
+/*****  Start Game function *****/
 function startGame()  {
     questionIndex = 0;
     score = 0;
@@ -111,6 +115,8 @@ function startGame()  {
     availableQuestions = shuffle(availableQuestions);
     getNewQuestion();
 }
+
+/*****  Selects random questions from available list *****/
 
 function shuffle(list) {
    return list.sort(() => Math.random() - 0.5);
@@ -144,6 +150,7 @@ function getNewQuestion() {
     questionIndex++;
 }
 
+/*****  Correct sound effect  *****/
 function playCorrectSoundMusic() {
     questionRightSound.play();
     const timeoutRef = setTimeout(() => {
@@ -151,6 +158,8 @@ function playCorrectSoundMusic() {
         clearTimeout(timeoutRef);
     }, 3000);
 }
+
+/*****  Incorrect sound effect  *****/
 function playIncorrectSoundMusic(){
     questionWrongSound.play();
      timeoutRef = setTimeout(() =>{
@@ -158,6 +167,8 @@ function playIncorrectSoundMusic(){
         clearTimeout(timeoutRef);
     },1000);
 }
+
+/*****  correct answers function  *****/
 function actualCorractAnswer(currentQuestionAnswer){
     console.log(currentQuestionAnswer+"here");
     console.log(choices);
@@ -165,9 +176,10 @@ function actualCorractAnswer(currentQuestionAnswer){
     const timeoutRef = setTimeout ( () =>{
         choices[currentQuestionAnswer - 1 ].parentElement.classList.remove('correct');
         clearTimeout(timeoutRef);
-    }, 2000)
+    }, 2000);
 }
 
+/*****  adds event listener for clicking answer option  *****/
 function initEventListeners() {
     choices.forEach(choice => {
         choice.addEventListener('click', e => {
@@ -196,10 +208,11 @@ function initEventListeners() {
                 selectedChoice.parentElement.classList.remove(classToApply);
                 getNewQuestion();
                 clearTimeout(timeoutRef);
-            }, 2000)
+            }, 2000);
         })
     })
 }
+/*****  increments score function  *****/
 
 function incrementScore(num) {
     score +=num;

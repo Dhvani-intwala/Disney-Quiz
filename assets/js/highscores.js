@@ -2,7 +2,7 @@ const highScoresList = document.querySelector('#highScoresList');
 const highScores = JSON.parse(localStorage.getItem('highScores')) || []
 
 console.log(highScoresList);
- //highScoresList.innerHTMl = 
+// Display high scores
 highScores.map(score => {
     var li = document.createElement("li");
     li.appendChild(document.createTextNode(score.name + " " +score.score));
