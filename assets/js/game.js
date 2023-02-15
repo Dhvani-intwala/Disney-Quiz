@@ -103,8 +103,8 @@ const choices = Array.from(document.querySelectorAll('.choice-text'));
 const progressText =document.querySelector("#progresstext");
 const scoreText =document.querySelector("#score");
 const progresssbarFull =document.querySelector("#progressBarFull");
-const questionRightSound = new Audio ("/assets/sounds/interface-124464.mp3");
-const questionWrongSound = new Audio ("/assets/sounds/buzzer-or-wrong-answer-20582.mp3");
+const questionRightSound = new Audio ("assets/sounds/interface-124464.mp3");
+const questionWrongSound = new Audio ("assets/sounds/buzzer-or-wrong-answer-20582.mp3");
 
 
 /*****  Start Game function *****/
