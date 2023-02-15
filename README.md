@@ -4,7 +4,7 @@
  This is Disney world Quiz Game created as Portfolio Project #2 (JavaScript Essentials) for Diploma in Full Stack Software Development at Code Institute. It is an interactive front-end quiz app where user can test their knowledge about Disney world cartoons. The application is easy to use for the user, is responsive across a range of devices, and incorporates best practices regarding design and accessibility. 
  The game consists of 10 questions. If a player answers a question correctly, they will receive 100 bonus points. Upon completing the game, the user can save their high score and later look back on the top high scores for the game. 
 
-![responsive screenshoot for all devices](assets/image/responsive-screen-Quiz.png)
+![responsive screenshoot for all devices](assets/images/responsive-screen-Quiz.png)
 
 # Table of content
 ----
@@ -67,7 +67,7 @@ To achieve the strategic goals I implemented the following features:-
 - I have used #0bdf24 to display the correct answer.
 - I have used #e50e0e to display the wrong answers.
 
-![ screenshoot all colour](assets/image/colour-palatte.png)
+![ screenshoot all colour](assets/images/colour-palatte.png)
 
 ### **Typography**
 - Google Fonts was used to import the chosen fonts for use in the website.
@@ -79,47 +79,47 @@ To achieve the strategic goals I implemented the following features:-
 <details>
 <summary>Start page(Desktop)</summary>
 
-![ start page desktop in wireframe](assets/image/desktop-wireframe.png)
+![ start page desktop in wireframe](assets/images/desktop-wireframe.png)
 </details>
 
 <details>
 <summary> Start page(Moblie)</summary>
 
-![ start page moblie in wireframe](assets/image/mobile-wireframe.png)
+![ start page moblie in wireframe](assets/images/mobile-wireframe.png)
 
 </details>
 <details>
 <summary> Game page(Desktop)</summary>
 
-![ game page desktop in wireframe](assets/image/gamepage-wireframe.png)
+![ game page desktop in wireframe](assets/images/gamepage-wireframe.png)
 
 </details>
 <details>
 <summary> Game page(Moblie)</summary>
 
-![game page moblie in wireframe](assets/image/gamepage-moblie-wireframe.png)
+![game page moblie in wireframe](assets/images/gamepage-moblie-wireframe.png)
 </details>
 <details>
 <summary> End page(Desktop)</summary>
 
-![end page desktop in wireframe](assets/image/endpage-wireframe.png)
+![end page desktop in wireframe](assets/images/endpage-wireframe.png)
 </details>
 <details>
 <summary>End page(moblie)</summary>
 
-![end page moblie in wireframe](assets/image/endpage-moblie-wireframe.png)
+![end page moblie in wireframe](assets/images/endpage-moblie-wireframe.png)
 </details>
 
 <details>
 <summary> Highscores page(Desktop)</summary>
 
-![highscore page desktop in wireframe](assets/image/highscore-wireframe.png)
+![highscore page desktop in wireframe](assets/images/highscore-wireframe.png)
 
 </details>
 <details>
 <summary> Highscores page(Desktop)</summary>
 
-![highscore page desktop in wireframe](assets/image/highscore-moblie-wireframe.png)
+![highscore page desktop in wireframe](assets/images/highscore-moblie-wireframe.png)
 
 </details>
 <br>
@@ -131,7 +131,7 @@ To achieve the strategic goals I implemented the following features:-
 - Blow the heading the user can find the sound icon which the user can either switch on/off  by clicking on the icon.
 - Underneath the heading and logo are two buttons that offer the players the choice to either start the game or have a look at the top high scores.
 
-![screenshoot of the start page](assets/image/Start-page.png)
+![screenshoot of the start page](assets/images/Start-page.png)
 
 ### **Game page**
 
@@ -144,7 +144,7 @@ To achieve the strategic goals I implemented the following features:-
 - On the top left-hand side, progress bar is shown, which will update the user on which questions the user is and how many remaining questions are still left.
 
 
-![screenshoot of the game page](assets/image/game-page.png)
+![screenshoot of the game page](assets/images/game-page.png)
 
 ### **End page**
 - At the end of the 10th question, the user will be brought automatically to the end page where the user can see his score, and if the user wants to save his score, he/she can save his score by inserting their username and clicking the save button.
@@ -152,7 +152,7 @@ To achieve the strategic goals I implemented the following features:-
 - When the user doesn’t want to save their score, they also have the option to skip this step by clicking on the home button.
 - If the user wants to replay the game, they can click on the play again button.
 
-![screenshoot of the end page](assets/image/end-page.png)
+![screenshoot of the end page](assets/images/end-page.png)
 
 ### **HighScores page**
 
@@ -161,7 +161,7 @@ To achieve the strategic goals I implemented the following features:-
 - From the high scores screen, the user can navigate back to the home screen via the go home button.
 
 
-![screenshoot of the highScore page](assets/image/high-scores-page.png)
+![screenshoot of the highScore page](assets/images/high-scores-page.png)
 
 ### **Future features to implement**
 
@@ -208,19 +208,19 @@ Laptop-1024px) using the Devtools service toolbar. The different CSS properties 
 
 - Desktop Startpage results:
 
-![screenshoot of start page lighthouse performance](/assets/image/lighthouse-performance.png)
+![screenshoot of start page lighthouse performance](/assets/images/lighthouse-performance.png)
 
 - Desktop gamepage results:
 
-![screenshoot of game page lighthouse performance](/assets/image/game-lighthouse-performance.png)
+![screenshoot of game page lighthouse performance](/assets/images/game-lighthouse-performance.png)
 
 - Desktop Endpage results:
 
-![screenshoot of end page lighthouse performance](/assets/image/endpage-lighthouse-performance.png)
+![screenshoot of end page lighthouse performance](/assets/images/endpage-lighthouse-performance.png)
 
 - Mobile gamepage results:
 
-![screenshoot of game page lighthouse performance moblie](/assets/image/moblie-lighthouse-gamepage1.png)
+![screenshoot of game page lighthouse performance moblie](/assets/images/moblie-lighthouse-gamepage1.png)
 
 ### **Validation**
 ### **HTML**
@@ -228,25 +228,25 @@ Laptop-1024px) using the Devtools service toolbar. The different CSS properties 
 <details>
 <summary> Index page</summary>
 
-![screenshoot of index html validator](/assets/image/indexpage-validator.png)
+![screenshoot of index html validator](/assets/images/indexpage-validator.png)
 
 </details>
 <details>
 <summary> Game page</summary>
 
-![screenshoot of game html validator](/assets/image/game-page-validator.png)
+![screenshoot of game html validator](/assets/images/game-page-validator.png)
 
 </details>
 <details>
 <summary> End page</summary>
 
-![screenshoot of end html validator](/assets/image/end-page-validator.png)
+![screenshoot of end html validator](/assets/images/end-page-validator.png)
 
 </details>
 <details>
 <summary> Highscore page</summary>
 
-![screenshoot of highscore html validator](/assets/image/high-scores-validator.png)
+![screenshoot of highscore html validator](/assets/images/high-scores-validator.png)
 
 </details>
 
@@ -255,7 +255,7 @@ Laptop-1024px) using the Devtools service toolbar. The different CSS properties 
 <details>
 <summary> Stylesheet</summary>
 
-![screenshoot of stylesheet validator](/assets/image/CSS-validetor.png)
+![screenshoot of stylesheet validator](/assets/images/CSS-validetor.png)
 
 </details>
 
@@ -263,7 +263,7 @@ Laptop-1024px) using the Devtools service toolbar. The different CSS properties 
 
 - All javacript files were validated through jsHint, presenting no errorrs.
 
-![screenshoot of  jshint](/assets/image/jshint.png)
+![screenshoot of  jshint](/assets/images/jshint.png)
 
 ### **Browser compatibility**
 
@@ -279,9 +279,9 @@ The results were satisfactory on all browsers.
 
 I confirmed that this wesite is responsive and all the function are displayed correctly.
 
-![screenshoot of  responsive site 1](/assets/image/Screenshot-responsiv-1.png)
+![screenshoot of  responsive site 1](/assets/images/Screenshot-responsiv-1.png)
 
-![screenshoot of  responsive site 2](/assets/image/Screenshot-responsiv-2.png)
+![screenshoot of  responsive site 2](/assets/images/Screenshot-responsiv-2.png)
 
 ## Peer Review
 
