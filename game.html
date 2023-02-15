@@ -15,16 +15,19 @@
         <script src="https://kit.fontawesome.com/b7114f05a1.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        <!-- Title-->
         <div class="game-title">
             <h1>Disney World Quiz</h1>
         </div>
         <div class="container-quiz">
             <div id="game" class="justify-center flex-column">
+                
                 <div id="hud">
                     <div class="hud-item">
                         <p id="progresstext" class="hud-prefix">
                             Question
                         </p>
+                        <!-- Question progress bar-->
                         <div id="progressBar">
                             <div id="progressBarFull"></div>
                         </div>
@@ -33,6 +36,8 @@
                     <i class="fas fa-volume-up audio-on hide" onclick="changeIcon(this)"></i>
                     <p style="display: none;" class="audiop">1</p>
                 </div> -->
+
+                    <!-- score area-->
                     <div class="hud-item">
                         <p class="hud-prefix">
                             Score
@@ -42,7 +47,7 @@
                         </p>
                     </div>
                 </div>
-
+                <!-- Questions and answer option-->
                 <h1 id="question">what is the answer to this Question</h1>
                 <div class="choice-container">
                     <p class="choice-prefix">A</p>
@@ -66,7 +71,7 @@
                 </div>
             </div>
         </div>
-
+         <!-- javascript-->
         <script src="./assets/js/game.js"></script>
         <script src="./assets/js/quiz-audio.js"></script>
     </body>

@@ -1,44 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description" content="This is portfolio project#2 created by Dhvani Intwala">
-    <meta name="keywords" content="Quiz, javascript">
-    <meta name="author" content="Dhvani Intwala">
-    <title>Disney World Quiz</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/webp">
-    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>
-    <link rel="shortcut icon" href="favicon/favicon.ico">
-    <script src="https://kit.fontawesome.com/b7114f05a1.js" crossorigin="anonymous"></script>
-
-</head>
-<body>
-    <main>
-        <div>
-            <img class="logo" src="./assets/images/Walt-Disney-Logo.webp" alt="An image of the the mickey mouse">
-        </div>
-        <div>
-            <h1 class="title"> Disney world Quiz</h1>
-        </div>
-    
-        <div class="audio-icon-button">
-            <i class="fas fa-volume-up fa-volume-off audio-on hide" onclick="changeIcon(this)"></i>
-            <p style="display: none;" id="audiop">0</p>
-        </div>
-    
-
-        <div class="container">
-            <div id="home" class="flex-column flex-center">
-                <h2>Are you Ready?</h2>
-                <a href="./game.html" class="btn" onclick="audioButtons.play();">Start</a>
-                <a href="./highscores.html" id="high-score-btn" class="btn" onclick="audioButtons.play();">High Scores<i class="fas fa-crown"></i></a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="Description" content="This is portfolio project#2 created by Dhvani Intwala" />
+        <meta name="keywords" content="Quiz, javascript" />
+        <meta name="author" content="Dhvani Intwala" />
+        <title>Disney World Quiz</title>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/webp" />
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="shortcut icon" href="favicon/favicon.ico" />
+        <script src="https://kit.fontawesome.com/b7114f05a1.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <main>
+             <!-- Logo -->
+            <div>
+                <img class="logo" src="./assets/images/Walt-Disney-Logo.webp" alt="An image of the the mickey mouse" />
             </div>
-        </div>
+             <!-- Title-->
+            <div>
+                <h1 class="title">Disney world Quiz</h1>
+            </div>
+            <!-- sound icon-->
+            <div class="audio-icon-button">
+                <i class="fas fa-volume-up fa-volume-off audio-on hide" onclick="changeIcon(this)"></i>
+                <p style="display: none;" id="audiop">0</p>
+            </div>
 
-        <script src="./assets/js/quiz-audio.js"></script>
-    </main>
-</body>
+            <div class="container">
+                <div id="home" class="flex-column flex-center">
+                     <!-- start button and highscore button-->
+                    <h2>Are you Ready?</h2>
+                    <a href="./game.html" class="btn" onclick="audioButtons.play();">Start</a>
+                    <a href="./highscores.html" id="high-score-btn" class="btn" onclick="audioButtons.play();">High Scores<i class="fas fa-crown"></i></a>
+                </div>
+            </div>
+            <!-- javascript-->
+            <script src="./assets/js/quiz-audio.js"></script>
+        </main>
+    </body>
 </html>

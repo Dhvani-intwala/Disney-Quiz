@@ -18,16 +18,18 @@
         <div class="container-end">
             <div id="end" class=".justify-center flex-column">
                 <h1 id="finalScore">0</h1>
+                <!-- Form submision for score and username-->
                 <form class="end-form-container">
                     <h2 id="end-text">Enter your name below to save your Score!</h2>
                     <input type="text" name="name" id="username" placeholder="Enter your name" />
                     <button class="btn2" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled>Save</button>
                 </form>
+                <!-- Links to play again button  and go home button-->
                 <a href="./game.html" class="btn2">Play Again</a>
                 <a href="./" class="btn2" onclick="audioButtons.play();">Go Home<i class="fas fa-home"></i></a>
             </div>
         </div>
-
+        <!-- javascript-->
         <script src="./assets/js/end.js"></script>
         <script src="./assets/js/quiz-audio.js"></script>
     </body>
