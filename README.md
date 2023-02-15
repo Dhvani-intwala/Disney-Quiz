@@ -6,6 +6,8 @@
 
 ![responsive screenshoot for all devices](assets/images/responsive-screen-Quiz.png)
 
+[Visit the Disney world quiz live website here](https://dhvani-intwala.github.io/Disney-Quiz/)
+
 # Table of content
 ----
 ## [Project](#project-1)
