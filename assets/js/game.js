@@ -103,8 +103,8 @@ const choices = Array.from(document.querySelectorAll('.choice-text'));
 const progressText =document.querySelector("#progresstext");
 const scoreText =document.querySelector("#score");
 const progresssbarFull =document.querySelector("#progressBarFull");
-const questionRightSound = new Audio ("assets/sounds/interface-124464.mp3");
-const questionWrongSound = new Audio ("assets/sounds/buzzer-or-wrong-answer-20582.mp3");
+const questionRightSound = new Audio ("../sounds/interface-124464.mp3");
+const questionWrongSound = new Audio ("../sounds/buzzer-or-wrong-answer-20582.mp3");
 
 
 /*****  Start Game function *****/
@@ -117,7 +117,6 @@ function startGame()  {
 }
 
 /*****  Selects random questions from available list *****/
-
 function shuffle(list) {
    return list.sort(() => Math.random() - 0.5);
   }
@@ -132,7 +131,7 @@ function getNewQuestion() {
     if(questionIndex >= MAX_QUESTIONS) {
         // Put this as part of game.html
         localStorage.setItem('mostRecentScore', score);
-        return window.location.assign('../end.html');
+        return window.location.assign('../../end.html');
     }
 
     
@@ -162,19 +161,17 @@ function playCorrectSoundMusic() {
 /*****  Incorrect sound effect  *****/
 function playIncorrectSoundMusic(){
     questionWrongSound.play();
-     timeoutRef = setTimeout(() =>{
+    const timeoutRef = setTimeout(() =>{
         questionWrongSound.pause();
         clearTimeout(timeoutRef);
     },1000);
 }
 
 /*****  correct answers function  *****/
-function actualCorractAnswer(currentQuestionAnswer){
-    console.log(currentQuestionAnswer+"here");
-    console.log(choices);
-    choices[currentQuestionAnswer - 1].parentElement.classList.add('correct');
+function highlightCorrectAnswer(currentAnswerIndex){
+    choices[currentAnswerIndex - 1].parentElement.classList.add('correct');
     const timeoutRef = setTimeout ( () =>{
-        choices[currentQuestionAnswer - 1 ].parentElement.classList.remove('correct');
+        choices[currentAnswerIndex - 1 ].parentElement.classList.remove('correct');
         clearTimeout(timeoutRef);
     }, 2000);
 }
@@ -193,11 +190,11 @@ function initEventListeners() {
             let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
             
             if(classToApply === 'correct') {
-                incrementScore(SCORE_POINTS);
+                incrementScore();
                 playCorrectSoundMusic();
             }else{
                 playIncorrectSoundMusic();
-                actualCorractAnswer(currentQuestion.answer);
+                highlightCorrectAnswer(currentQuestion.answer);
             }
 
             console.log(classToApply);
@@ -214,8 +211,8 @@ function initEventListeners() {
 }
 /*****  increments score function  *****/
 
-function incrementScore(num) {
-    score +=num;
+function incrementScore() {
+    score +=SCORE_POINTS;
     scoreText.innerText = score;
 }
 
