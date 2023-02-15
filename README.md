@@ -25,7 +25,6 @@
 - [Languages Used](#languages-used)
 - [Softwares Used](#softwares-used)
 ## [Testing](#testing-1)
-- [Function Testing](#function-testing)
 - [Performance](#performance)
 - [Validation](#validation)
     - [HTML](#html)
@@ -33,8 +32,8 @@
     - [JAVA SCRIPT](#java-script)
 - [Browser compatibility](#browser-compatibility)
 - [Responsiveness](#responsiveness)
-- [Peer Review](#peerreview)
-    - [Bugs Found and Solved](#bugsfoundandsolved)
+- [Peer Review](#peer-review)
+    - [Bugs Found and Solved](#bugs-found-and-solved)
 ## [Deployment](#deployment-1)
 ## [Credits](#credits-1)
 ## [Content](#content-1)
@@ -58,7 +57,7 @@ To achieve the strategic goals I implemented the following features:-
     - enjoy the game,
     - see my score after I answer the last question,
     - be able to re-play the game and compare my score
-    - As a user, I want a responsive site so I can play the game on any device.
+    - have a responsive site so I can play the game on any device.
 
 ## User experience (UX/UI)
 ### **Colour Palatte**
@@ -101,12 +100,12 @@ To achieve the strategic goals I implemented the following features:-
 ![game page moblie in wireframe](assets/readme-img/gamepage-moblie-wireframe.png)
 </details>
 <details>
-<summary> end page(Desktop)</summary>
+<summary> End page(Desktop)</summary>
 
 ![end page desktop in wireframe](assets/readme-img/endpage-wireframe.png)
 </details>
 <details>
-<summary>end page(moblie)</summary>
+<summary>End page(moblie)</summary>
 
 ![end page moblie in wireframe](assets/readme-img/endpage-moblie-wireframe.png)
 </details>
@@ -129,11 +128,12 @@ To achieve the strategic goals I implemented the following features:-
 ### **Start page**
 
 - The start page shows the game title along with the logo. 
+- Blow the heading the user can find the sound icon which the user can either switch on/off  by clicking on the icon.
 - Underneath the heading and logo are two buttons that offer the players the choice to either start the game or have a look at the top high scores.
 
 ![screenshoot of the start page](assets/readme-img/Start-page.png)
 
-### **game page**
+### **Game page**
 
 - The game page shows a question and gives the player 4 answer choices to choose from.
 - On hover, the answer option bars will expand, creating a more visual representation of what is about to be selected
@@ -196,22 +196,11 @@ To achieve the strategic goals I implemented the following features:-
 Testing was performed across a range of devices, including:
 
 - All website pages have been tested on different browsers: Chrome, Edge, and Safari.
-- When a nav element is clicked, it provides the navigation link to the respective page.
 - The responsiveness of the website on different screen sizes (Mobile S-320px, Mobile M-375px, Mobile L-425px, Tablet-768px,
 Laptop-1024px) using the Devtools service toolbar. The different CSS properties for font, color, background color, links, submit button work as expected.
-- Inside the footer, social media is linked when clicked on it,the link directs to the respective social media page.
+
 
 ### **Function Testing**
-
-| Page | Test | Successfully Completed |
-| :----| :---| :----------------------:|
-| All  | Logo image links back to homepage | Yes |
-| All  | Navigation links go to relevant page | Yes |
-| All  | Call to action buttons link to relevant page | Yes |
-| All  | Images and icons load | Yes |
-| Game | score and attempts correctly increase with gameplay | Yes |
-| Game | The check answer button works and returns the correct modal informing the player if their answer is correct/incorrect | Yes |
-<br>
 
 ### **Performance**
 
@@ -243,7 +232,7 @@ Laptop-1024px) using the Devtools service toolbar. The different CSS properties 
 
 </details>
 <details>
-<summary> Gmae page</summary>
+<summary> Game page</summary>
 
 ![screenshoot of game html validator](/assets/readme-img/game-page-validator.png)
 
@@ -294,8 +283,15 @@ I confirmed that this wesite is responsive and all the function are displayed co
 
 ![screenshoot of  responsive site 2](/assets/readme-img/Screenshot-responsiv-2.png)
 
+## Peer Review
 
+I asked my friends and brother to test the application and i received a positive feedback, no issues were reported.
+I implemented function that shows thw correct answer when user chose wrong answer with sounds effects.
 
+ ## **Bugs Found and Solved**
+
+- Issue #1 
+    
 
 ## Deployment
 
@@ -304,13 +300,12 @@ This  branch was deployed using GitHub pages.
 
 - This site was deployed by completing the following steps:
 
-1. Open GitHub.
-2. Click on the project to be deployed.
-3. Navigate to the "settings".
-4. Navigate down to the "GitHub Pages".
-5. Click on "Check it out here".
-6. Select the main branch and select "save".
-7. The link to the live website was ready on the top.
+   1. Open GitHub.
+   2. Click on the project to be deployed.
+   3. Navigate to the "settings".
+   4. Navigate down to the "GitHub Pages".
+   5. Select the main branch and select "save".
+   6. The link to the live website was ready on the top.
 
 ## Credits
 
