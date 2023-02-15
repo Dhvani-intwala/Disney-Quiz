@@ -103,8 +103,8 @@ const choices = Array.from(document.querySelectorAll('.choice-text'));
 const progressText =document.querySelector("#progresstext");
 const scoreText =document.querySelector("#score");
 const progresssbarFull =document.querySelector("#progressBarFull");
-const questionRightSound = new Audio ("../sounds/interface-124464.mp3");
-const questionWrongSound = new Audio ("../sounds/buzzer-or-wrong-answer-20582.mp3");
+const questionRightSound = new Audio ("./sounds/interface-124464.mp3");
+const questionWrongSound = new Audio ("./sounds/buzzer-or-wrong-answer-20582.mp3");
 
 
 /*****  Start Game function *****/
@@ -131,7 +131,7 @@ function getNewQuestion() {
     if(questionIndex >= MAX_QUESTIONS) {
         // Put this as part of game.html
         localStorage.setItem('mostRecentScore', score);
-        return window.location.assign('../../end.html');
+        return window.location.assign('./end.html');
     }
 
     
