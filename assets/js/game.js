@@ -103,8 +103,8 @@ const choices = Array.from(document.querySelectorAll('.choice-text'));
 const progressText =document.querySelector("#progresstext");
 const scoreText =document.querySelector("#score");
 const progresssbarFull =document.querySelector("#progressBarFull");
-const questionRightSound = new Audio ("./sounds/interface-124464.mp3");
-const questionWrongSound = new Audio ("./sounds/buzzer-or-wrong-answer-20582.mp3");
+const questionRightSound = new Audio ("/assets/sounds/interface-124464.mp3");
+const questionWrongSound = new Audio ("/assets/sounds/buzzer-or-wrong-answer-20582.mp3");
 
 
 /*****  Start Game function *****/
@@ -161,7 +161,7 @@ function playCorrectSoundMusic() {
 /*****  Incorrect sound effect  *****/
 function playIncorrectSoundMusic(){
     questionWrongSound.play();
-    const timeoutRef = setTimeout(() =>{
+     const timeoutRef = setTimeout(() =>{
         questionWrongSound.pause();
         clearTimeout(timeoutRef);
     },1000);
@@ -196,8 +196,6 @@ function initEventListeners() {
                 playIncorrectSoundMusic();
                 highlightCorrectAnswer(currentQuestion.answer);
             }
-
-            console.log(classToApply);
            
             selectedChoice.parentElement.classList.add(classToApply);
 

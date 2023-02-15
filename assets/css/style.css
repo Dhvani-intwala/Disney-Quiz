@@ -1,25 +1,25 @@
 /* Font style */
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Prata&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
 
 /* Global styles */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 14px;
     color: rgb(246, 239, 239);
     font-family: 'Nova Square', cursive;
-    
 }
 
 html {
-   background-color:#054f5e;
-   
+    background-color: #054f5e;
 }
-main{
+
+main {
     display: grid;
     margin: auto;
     align-self: center;
@@ -27,7 +27,8 @@ main{
     justify-content: center;
     width: 100%;
 }
-h2{
+
+h2 {
     font-size: 2.6rem;
     text-align: center;
     padding: 20px 20px;
@@ -35,16 +36,15 @@ h2{
 }
 /* header styles*/
 
-.logo{
+.logo {
     display: block;
     margin: auto;
     width: 15rem;
     height: 15rem;
     margin-top: 10%;
-    
 }
 
-.title{
+.title {
     font-size: 4rem;
     font-family: 'Cinzel', sans-serif;
     color: whitesmoke;
@@ -52,8 +52,7 @@ h2{
     align-self: center;
     text-align: center;
     /* code for h1 3d effect can be found here: https://codepen.io/designcouch/pen/MWrypV */
-    text-shadow:
-    1px 1px 0px #0f0e0f,
+    text-shadow: 1px 1px 0px #0f0e0f,
     2px 2px 0px #0f0e0f,
     3px 3px 0px #0f0e0f,
     4px 4px 0px #0f0e0f,
@@ -64,13 +63,12 @@ h2{
     9px 9px 0px#0f0e0f,
     10px 10px 0px #0f0e0f,
     15px 15px 25px rgba(0,0,0,.9);
-  	transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
 }
 
 .title:hover {
-	left:20px;
-  text-shadow:
-    -1px 1px 0px #0f0e0f,
+    left: 20px;
+    text-shadow: -1px 1px 0px #0f0e0f,
     -2px 2px 0px #0f0e0f,
     -3px 3px 0px #0f0e0f,
     -4px 4px 0px #0f0e0f,
@@ -82,136 +80,145 @@ h2{
     -10px 10px 0px #0f0e0f,
     -15px 15px 25px #0f0e0f;
 }
-h1{
+
+h1 {
     font-size: 3rem;
     color: white;
     font-family: 'Cinzel', sans-serif;
 }
 
-.container{
+.container {
     display: block;
     margin: auto;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     padding: 2rem;
-
-   
 }
 
-.flex-column{
+.flex-column {
     display: flex;
     flex-direction: column;
 }
-.flex-center{
+
+.flex-center {
     justify-content: center;
     align-items: center;
 }
 
-.justify-center{
+.justify-center {
     justify-content: center;
 }
-.text-center{
+
+.text-center {
     text-align: center;
 }
-.hidden{
+
+.hidden {
     display: flex;
 }
-.btn{
+
+.btn {
     font-size: 2.4rem;
     padding: 1rem 0;
-    width:25rem;
+    width: 25rem;
     text-align: center;
     margin-bottom: 1rem;
     text-decoration: none;
-    color:black; 
+    color: black;
     background: #fcfcfc;
     border-radius: 4px;
 }
-.btn:hover{
-    cursor:pointer;
+
+.btn:hover {
+    cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem 0 rgba(33, 32, 32, 0.9);
-    transition:  transform 150ms;
+    transition: transform 150ms;
     transform: scale(1.03);
 }
-.btn[disabled]:hover{
+
+.btn[disabled]:hover {
     cursor: not-allowed;
     box-shadow: none;
     transform: none;
 }
 
-i{
+i {
     font-size: 2rem;
     margin-left: 1rem;
     cursor: pointer;
-    
-    
 }
-.audio-icon-button{
-    margin: auto;   
+
+.audio-icon-button {
+    margin: auto;
     color: #fff;
 }
 /* game page */
 
-.choice-container{
+.choice-container {
     display: flex;
     height: 4rem;
     margin-bottom: 0.8rem;
     border-radius: 10px;
     background-color: #0f0e0fbb;
     font-size: 2rem;
-   
-
 }
-.choice-container:hover{
+
+.choice-container:hover {
     cursor: pointer;
-    box-shadow:0 0.4rem 1.4rem 0 rgba(33, 32, 32, 0.9);
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(33, 32, 32, 0.9);
     transform: scale(1.02);
     transition: transform 100ms;
 }
-.choice-prefix{
+
+.choice-prefix {
     padding: 1.5rem 2rem;
     color: black;
-    background-color: rgb(216, 224, 217);;
+    background-color: rgb(216, 224, 217);
+    ;
 }
-.choice-text{
+
+.choice-text {
     padding: 1.5rem;
-    width:100%;
+    width: 100%;
 }
-.container-quiz{
+
+.container-quiz {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    margin:  1rem auto;
-    
-}
-#game{
-    width:100%;
+    margin: 1rem auto;
 }
 
-.correct{
+#game {
+    width: 100%;
+}
+
+.correct {
     background: linear-gradient(32deg, rgb(11, 223, 36) 0%, rgb(41,232,111)100%);
 }
-.incorrect{
+
+.incorrect {
     background: linear-gradient(32deg, rgb(229, 14, 14) 0%, rgb(229, 14, 14)100%);
 }
-#hud{
+
+#hud {
     display: flex;
     justify-content: space-between;
 }
-.hud-prefix{
+
+.hud-prefix {
     text-align: center;
     font-size: 2rem;
-    
 }
 
-.hud-main-text{
+.hud-main-text {
     text-align: center;
-   
 }
-#progressBar{
-    width:20rem;
+
+#progressBar {
+    width: 20rem;
     height: 3rem;
     border: 0.2rem solid rgb(236, 241, 237);
     margin-top: 2rem;
@@ -219,115 +226,129 @@ i{
     overflow: hidden;
     margin-bottom: 3rem;
 }
-.hud-item{
+
+.hud-item {
     text-align: center;
 }
-#progressBarFull{
+
+#progressBarFull {
     height: 100%;
-    background:  rgb(216, 224, 217);
+    background: rgb(216, 224, 217);
     width: 0%;
 }
 
-#question{
+#question {
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-size: 2rem;
     font-family: 'Nova Square', cursive;
     color: white;
 }
-.game-title h1{
+
+.game-title h1 {
     text-align: center;
-   margin-top: 20px;
-   margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
-.gamepage-btn{
-   text-align: center;
-   margin-top: 2rem;
+
+.gamepage-btn {
+    text-align: center;
+    margin-top: 2rem;
 }
- a{
+
+a {
     text-decoration: none;
-    padding:1rem;
+    padding: 1rem;
     background-color: #fff;
     color: #0f0e0f;
 }
-a:hover{
-    cursor:pointer;
+
+a:hover {
+    cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem 0 rgba(33, 32, 32, 0.9);
-    transition:  transform 150ms;
+    transition: transform 150ms;
     transform: scale(1.03);
 }
 
 
 /* end page */
 
-.end-form-container{
-    width:100%;
+.end-form-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 30rem;
     margin: auto;
 }
-input{
+
+input {
     margin-bottom: 1rem;
     width: 20rem;
-    padding:1.5rem;
+    padding: 1.5rem;
     font-size: 1.8rem;
     border: none;
     color: black;
 }
-input::placeholder{
+
+input::placeholder {
     color: black;
 }
-#username{
+
+#username {
     margin-bottom: 3rem;
-    width:80%;
+    width: 80%;
     outline: none;
 }
+
 #end-text {
     font-size: 2.4rem;
-    color:#fff;
+    color: #fff;
     text-align: center;
 }
-#saveScorebtn{
+
+#saveScorebtn {
     border: none;
 }
-.btn2{
+
+.btn2 {
     font-size: 2.4rem;
     padding: 1rem 0;
-    width:25rem;
+    width: 25rem;
     text-align: center;
     margin-bottom: 1rem;
     text-decoration: none;
-    color:rgb(14, 13, 13); 
+    color: rgb(14, 13, 13);
     background: linear-gradient(90deg, rgb(244, 239, 240) 0%, rgb(245, 240, 241)100%);
     border-radius: 4px;
     margin-right: 65px;
     margin: 10px auto;
 }
-.btn2:hover{
-    cursor:pointer;
-    box-shadow:0 0.4rem 1.4rem 0 rgba(33, 32, 32, 0.9);
-    transition:  transform 150ms;
+
+.btn2:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(33, 32, 32, 0.9);
+    transition: transform 150ms;
     transform: scale(1.03);
 }
 
-.container-end{
+.container-end {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin:  auto;
+    margin: auto;
     margin-top: 50px;
     padding: 2rem;
     width: 80%;
 }
-#finalScore{
+
+#finalScore {
     text-align: center;
 }
 
 /* highscores page */
 
-.container-final{
+.container-final {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -335,52 +356,60 @@ input::placeholder{
     padding: 2rem;
     margin: 10rem auto;
 }
+
 #highScoresList {
     list-style: none;
     margin-bottom: 4rem;
 }
-.high-score{
+
+.high-score {
     font-size: 2.8rem;
     margin-bottom: 0.5rem;
 }
 
-@media screen and (min-width:375px){
+@media screen and (min-width:375px) {
 
-    .container-quiz{
-        width:90%;
+    .container-quiz {
+        width: 90%;
     }
-    #progresstext{
+
+    #progresstext {
         width: 10rem;
         font-size: 1.5rem;
     }
-    #progressBar{
+
+    #progressBar {
         width: 10rem;
     }
-    
-    .hud-item{
+
+    .hud-item {
         font-size: 1.5rem;
-    }
-    #score{
-        font-size: 1.5rem;
-    }
-    #question{
-        text-align:center;
     }
 
+    #score {
+        font-size: 1.5rem;
+    }
+
+    #question {
+        text-align: center;
+    }
+    h1{
+        font-size: 2rem;
+    }
 }
-@media screen and (min-width:768px){
-    #progresstext{
+
+@media screen and (min-width:768px) {
+    #progresstext {
         width: 20rem;
     }
-    #progressBar{
+
+    #progressBar {
         width: 15rem;
         margin: auto;
         margin-top: 10px;
     }
-    .container-quiz{
-        width:70%;
+
+    .container-quiz {
+        width: 70%;
     }
-
 }
-
-

@@ -35,6 +35,7 @@
 - [Peer Review](#peer-review)
     - [Bugs Found and Solved](#bugs-found-and-solved)
 ## [Deployment](#deployment-1)
+ - [Run locally](#run-locally)
 ## [Credits](#credits-1)
 ## [Content](#content-1)
 ## [Acknowledgment](#acknowledgment-1)
@@ -290,22 +291,89 @@ I implemented function that shows thw correct answer when user chose wrong answe
 
  ## **Bugs Found and Solved**
 
-- Issue #1 
-    
+Bugs Solved
+
+Issue #1 
+
+Problem: During testing the website click sound of right and wrong answer was not coming
+
+        Previous code was 
+        const questionRightSound = new Audio ("./sounds/interface-124464.mp3");
+        const questionWrongSound = new Audio ("./sounds/buzzer-or-wrong-answer-20582.mp3");
+
+Solution: It was solved by using the following code
+
+        const questionRightSound = new Audio ("/assets/sounds/interface-124464.mp3");
+        const questionWrongSound = new Audio ("/assets/sounds/buzzer-or-wrong-answer-20582.mp3");
+        
+Issue #2
+
+Problem: In the Game page after question on.10, 11th question was coming instead of End page
+
+Previous code was
+ ![screenshoot of bugs](/assets/images/Previous-code-error-for-Max-Question.PNG)
+
+Solution: It was solved by using the following code
+
+ ![screenshoot of bugs](/assets/images/Solution-code-for-Max-Question.PNG)
+
+Issue #3
+
+Problem: Uncaught TypeError
+
+There was an uncaught type error on the game page, which declared inner text as null. The reason this error was happening was because the item didn't exist in the game html page.
+Solution: 
+
+Issue #4
+
+Problem: colour for right and wrong answer was not showing during playing the Quiz.
+Solutio: IN the css file i had forget to put . to call the class correct and incorrect
+
+Unsolved Bugs
+
+Issue#1
+
+During Final testing of the website an unrecognised error came.
+favicon error (404 not found) as this error doesn't effect the end user, therefore it was left unsolved. It might have appear because of web browsers.
+
+ ![screenshoot of bugs](/assets/images/Unsolved%20issue.PNG)
 
 ## Deployment
 
-The Website  develpment was created in the "main" branch.
-This  branch was deployed using GitHub pages.
+This site is hosted using Github pages, and it was deployed directly from the main branch.
+Start page of the website is named as index.html in order to deploy the site correctly on the Github pages.
 
-- This site was deployed by completing the following steps:
+This site was deployed by completing the following steps:
 
-   1. Open GitHub.
-   2. Click on the project to be deployed.
+   1. Login or Signup to GitHub.
+   2. Open Project Repository.
    3. Navigate to the "settings".
-   4. Navigate down to the "GitHub Pages".
-   5. Select the main branch and select "save".
-   6. The link to the live website was ready on the top.
+   4. Then under "code and automation" go the "pages" menu on the left-hand-side column.
+   5. Select the "main branch" from the "source" button 
+   6. Then Select folder ""/root" and Click "save".
+   7. Refresh the page and then we can see the link to the live website on the top of the page.
+   8. click on the link and live website page will open in the new tab.
+
+   ![screenshoot of deployment](/assets/images/Deployment.PNG)
+
+### **Run locally**
+### Fork
+
+1. Login or Signup to GitHub.
+2. Open Project [Repository](https://github.com/Dhvani-intwala/Disney-Quiz).
+3. Click the Fork button in the top right corner.
+
+ ![screenshoot of fork](/assets/images/Fork.PNG)
+
+### Clone
+
+1.  Login or Signup to GitHub.
+2.  Open Project [Repository](https://github.com/Dhvani-intwala/Disney-Quiz).
+3.  Click on the green 'Code' button which will open a drop down menu
+4.  Copy the clone link you require (e.g. HTTPS/SSH/GitHub CLI)
+5.  In your code editor change the working directory to the location where you want the clone
+6.  Type 'git clone' and paste in the link
+
 
 ## Credits
 
@@ -315,9 +383,7 @@ This  branch was deployed using GitHub pages.
 
 ## Contents
 
-- All the question provided in the game were taken from one online quiz.
-
-- [Disney World Quiz](https://www.w3schools.com)
+- All the question provided in the game were taken from [Disney World Quiz](https://www.objectivequiz.com/disney-questions-answers)
 
 ## Acknowledgements
 

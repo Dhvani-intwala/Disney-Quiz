@@ -1,78 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description" content="This is portfolio project#2 created by Dhvani Intwala">
-    <meta name="keywords" content="Quiz, javascript">
-    <meta name="author" content="Dhvani Intwala">
-    <title>Quiz page</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>
-    <link rel="shortcut icon" href="favicon.ico" type="image/webp">
-    <link rel="shortcut icon" href="favicon/favicon.ico">
-    <script src="https://kit.fontawesome.com/b7114f05a1.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div class="game-title">
-        <h1>Disney World Quiz</h1>
-    
-       
-    </div>
-    <div class="container-quiz">
-        <div id="game" class="justify-center flex-column">
-            <div id="hud">
-                <div class="hud-item">
-                    <p id="progresstext" class="hud-prefix">
-                        Question
-                    </p>
-                    <div id="progressBar">
-                        <div id="progressBarFull"></div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="Description" content="This is portfolio project#2 created by Dhvani Intwala" />
+        <meta name="keywords" content="Quiz, javascript" />
+        <meta name="author" content="Dhvani Intwala" />
+        <title>Quiz page</title>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/webp" />
+        <link rel="shortcut icon" href="favicon/favicon.ico" />
+        <script src="https://kit.fontawesome.com/b7114f05a1.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="game-title">
+            <h1>Disney World Quiz</h1>
+        </div>
+        <div class="container-quiz">
+            <div id="game" class="justify-center flex-column">
+                <div id="hud">
+                    <div class="hud-item">
+                        <p id="progresstext" class="hud-prefix">
+                            Question
+                        </p>
+                        <div id="progressBar">
+                            <div id="progressBarFull"></div>
+                        </div>
                     </div>
-                </div>
-            <!--    <div class="audio-icon-button2">
+                    <!--    <div class="audio-icon-button2">
                     <i class="fas fa-volume-up audio-on hide" onclick="changeIcon(this)"></i>
                     <p style="display: none;" class="audiop">1</p>
                 </div> -->
-                <div class="hud-item">
-                    <p class="hud-prefix"> 
-                        Score
-                    </p>
-                    <p class="hud-main-text" id="score">
-                        0
-                    </p>
+                    <div class="hud-item">
+                        <p class="hud-prefix">
+                            Score
+                        </p>
+                        <p class="hud-main-text" id="score">
+                            0
+                        </p>
+                    </div>
+                </div>
+
+                <h1 id="question">what is the answer to this Question</h1>
+                <div class="choice-container">
+                    <p class="choice-prefix">A</p>
+                    <p class="choice-text" data-number="1">Choice 1</p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">B</p>
+                    <p class="choice-text" data-number="2">Choice 2</p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">C</p>
+                    <p class="choice-text" data-number="3">Choice 3</p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">D</p>
+                    <p class="choice-text" data-number="4">Choice 4</p>
+                </div>
+                <div class="gamepage-btn">
+                    <a href="./" class="btn3">Go Home</a>&nbsp; &nbsp;
+                    <a href="./game.html" class="btn3">Play Again</a>
                 </div>
             </div>
-            
-            <h1 id="question" > what is the answer to this Question</h1>
-            <div class="choice-container">
-                <p class="choice-prefix">A</p>
-                <p class="choice-text" data-number="1">Choice 1</p>
-            </div>
-            <div class="choice-container">
-                <p class="choice-prefix">B</p>
-                <p class="choice-text" data-number="2">Choice 2</p>
-            </div>
-            <div class="choice-container">
-                <p class="choice-prefix">C</p>
-                <p class="choice-text" data-number="3">Choice 3</p>
-            </div>
-            <div class="choice-container">
-                <p class="choice-prefix">D</p>
-                <p class="choice-text" data-number="4">Choice 4</p>
-            </div>
-            <div class="gamepage-btn">
-            
-                     <a href="./" class="btn3">Go Home</a>&nbsp; &nbsp;
-                    <a href="./game.html" class="btn3">Play Again</a>
-                
-            </div>
         </div>
-    </div>
-    
-  
-    <script src="./assets/js/game.js"></script>
-    <script src="./assets/js/quiz-audio.js"></script>
-</body>
+
+        <script src="./assets/js/game.js"></script>
+        <script src="./assets/js/quiz-audio.js"></script>
+    </body>
 </html>
