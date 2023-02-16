@@ -164,7 +164,7 @@ To achieve the strategic goals I implemented the following features:-
 - From the high scores screen, the user can navigate back to the home screen via the go home button.
 
 
-![screenshoot of the highScore page](assets/images/high-scores-page.png)
+![screenshoot of the highScore page](assets/images/highscorepage.png)
 
 ### **Future features to implement**
 
