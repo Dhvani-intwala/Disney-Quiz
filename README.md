@@ -82,25 +82,25 @@ To achieve the strategic goals I implemented the following features:-
 <details>
 <summary>Start page(Desktop)</summary>
 
-![ start page desktop in wireframe](assets/images/desktop-wireframe.png)
+![ start page desktop in wireframe](assets/images/start-page-wire-frame.png)
 </details>
 
 <details>
 <summary> Start page(Moblie)</summary>
 
-![ start page moblie in wireframe](assets/images/mobile-wireframe.png)
+![ start page moblie in wireframe](assets/images/startpag-moblie-wire-frame.png)
 
 </details>
 <details>
 <summary> Game page(Desktop)</summary>
 
-![ game page desktop in wireframe](assets/images/gamepage-wireframe.png)
+![ game page desktop in wireframe](assets/images/quizpage-desktop-wireframe.png)
 
 </details>
 <details>
 <summary> Game page(Moblie)</summary>
 
-![game page moblie in wireframe](assets/images/gamepage-moblie-wireframe.png)
+![game page moblie in wireframe](assets/images/quizpage-moblie-wireframe.png)
 </details>
 <details>
 <summary> End page(Desktop)</summary>
@@ -338,7 +338,7 @@ Issue#1
 During Final testing of the website an unrecognised error came.
 favicon error (404 not found) as this error doesn't effect the end user, therefore it was left unsolved. It might have appear because of web browsers.
 
- ![screenshoot of bugs](/assets/images/Unsolved%20issue.PNG)
+ ![screenshoot of bugs](/assets/images/Unsolved-issue.PNG)
 
 ## Deployment
 
