@@ -147,11 +147,13 @@ i {
     font-size: 2rem;
     margin-left: 1rem;
     cursor: pointer;
+    color: #0f0e0f;
 }
-
+.fa-volume-up{
+    color: white;
+}
 .audio-icon-button {
     margin: auto;
-    color: #fff;
 }
 /* game page */
 
