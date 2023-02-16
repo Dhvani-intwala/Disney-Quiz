@@ -4,7 +4,7 @@
  This is Disney world Quiz Game created as Portfolio Project #2 (JavaScript Essentials) for Diploma in Full Stack Software Development at Code Institute. It is an interactive front-end quiz app where user can test their knowledge about Disney world cartoons. The application is easy to use for the user, is responsive across a range of devices, and incorporates best practices regarding design and accessibility. 
  The game consists of 10 questions. If a player answers a question correctly, they will receive 100 bonus points. Upon completing the game, the user can save their high score and later look back on the top high scores for the game. 
 
-![responsive screenshoot for all devices](assets/images/responsive-screen-Quiz.png)
+![responsive screenshoot for all devices](assets/images/responsive-image.png)
 
 [Visit the Disney world quiz live website here](https://dhvani-intwala.github.io/Disney-Quiz/)
 
@@ -50,35 +50,38 @@ This ten-question quiz game was designed for fans of Disney world to test their 
 To achieve the strategic goals I implemented the following features:-
 - simple website layout with the content located in the center of the viewport
 - easy to click buttons both on computers and mobile touch interfaces
-- eye-pleasing graphics to make the experience entertaining.
+- eye-pleasing graphics to make the experience entertaining
 
 ### **User Goal**
-- as a user i want to:
-    - navigate easily through the page,
-    - see a clean interface and be able to track progress/score,
-    - know how many questions I have left to answer,
-    - enjoy the game,
-    - see my score after I answer the last question,
-    - be able to re-play the game and compare my score
-    - have a responsive site so I can play the game on any device.
+As a user i want to:
+- navigate easily through the page
+- see a clean interface and be able to track progress/score
+- know how many questions are left to answer
+- enjoy the game
+- see the score after answering the last question
+- be able to re-play the game and compare the score
+- have a responsive site so, the user can play the game on any device
 
 ## User experience (UX/UI)
 ### **Colour Palatte**
 - The palette was created using the [Coolors](https://coolors.co/) website.
-- I have used #033c48cb for background for all pages,       
-  #000000 and #fff both to color the text.
-- I have used #0bdf24 to display the correct answer.
-- I have used #e50e0e to display the wrong answers.
+- I have used #054f5e for background for all pages      
+- #ffffff to color the text
+- #0f0e0f to hover the title and buttons
+- I have used #0bdf24 to display the correct answer
+- I have used #e50e0e to display the wrong answers
 
 ![ screenshoot all colour](assets/images/colour-palatte.png)
 
 ### **Typography**
-- Google Fonts was used to import the chosen fonts for use in the website.
-    - For the Page title I have used the google font Cinzel.
-    - For the body page I have used the google font Nova Square cursive.
+Google Fonts was used to import the chosen fonts for use in the website.
+- For the Page title I have used the google font Cinzel.
+- For the body page I have used the google font Nova Square cursive.
 
 ### **Wireframe**
-- To create the wireframe I used the Balsamiq Wireframing Software.
+
+To create the wireframe I used the Balsamiq Wireframing Software.
+
 <details>
 <summary>Start page(Desktop)</summary>
 
@@ -120,7 +123,7 @@ To achieve the strategic goals I implemented the following features:-
 
 </details>
 <details>
-<summary> Highscores page(Desktop)</summary>
+<summary> Highscores page(Moblie)</summary>
 
 ![highscore page desktop in wireframe](assets/images/highscore-moblie-wireframe.png)
 
@@ -131,20 +134,20 @@ To achieve the strategic goals I implemented the following features:-
 ### **Start page**
 
 - The start page shows the game title along with the logo. 
-- Blow the heading the user can find the sound icon which the user can either switch on/off  by clicking on the icon.
-- Underneath the heading and logo are two buttons that offer the players the choice to either start the game or have a look at the top high scores.
+- Below the heading the user can find the sound icon which the user can either switch on/off  by clicking on the icon.
+- Underneath the heading and logo there are two buttons that offer the players the choice to either start the game or have a look at the top high scores.
 
-![screenshoot of the start page](assets/images/Start-page.png)
+![screenshoot of the start page](assets/images/startpage.png)
 
 ### **Game page**
 
 - The game page shows a question and gives the player 4 answer choices to choose from.
 - On hover, the answer option bars will expand, creating a more visual representation of what is about to be selected
-- When the user plays the game, and if the user gives the wrong answer, the quiz will not show the correct answer, this would make the user more curious, and the user would like to know the Correct answer. Thus making the quiz more interesting, and the user will play the game again to achieve high scores.
-- A score count adds hundreds (100) each time the user selects a correct answer. The scoreboard will appear on the top right-hand side during the quiz. 
+- When the user plays the game, and if the user gives the wrong answer,the quiz will display the correct answer
+- A score count adds hundreds (100) each time the user selects a correct answer. The scoreboard will appear on the top right-hand-side during the quiz. 
 - Option will turn green if the user selects the correct answer. 
-- Option will turn red if the user selects the incorrect answer. 
-- On the top left-hand side, progress bar is shown, which will update the user on which questions the user is and how many remaining questions are still left.
+- when the user selects the wrong answer, the option will turn red and, parallelly the user will get to know the correct answer which will be displayed in green.
+- On the top left-hand-side progress bar is shown, which will update the user on which questions the user is and how many questions are still remaining.
 
 
 ![screenshoot of the game page](assets/images/game-page.png)
@@ -152,16 +155,16 @@ To achieve the strategic goals I implemented the following features:-
 ### **End page**
 - At the end of the 10th question, the user will be brought automatically to the end page where the user can see his score, and if the user wants to save his score, he/she can save his score by inserting their username and clicking the save button.
 - User cannot save their score unless and until they enter a username.
-- When the user doesn’t want to save their score, they also have the option to skip this step by clicking on the home button.
-- If the user wants to replay the game, they can click on the play again button.
+- When the user doesn’t want to save their score, they also have the option to skip this step by clicking on the Go Home button.
+- If the user wants to replay the game, they can click on the Play Again button.
 
 ![screenshoot of the end page](assets/images/end-page.png)
 
 ### **HighScores page**
 
-- As the title says, the high score page will display the score of users. The user can go to this page even before starting the quiz by clicking on the high score button. This was done intentionally so that the user can see another user's high score and can try to compete with other users by scoring more scores.
+- As the title says, the high score page will display the score of users. The user can go to this page even before starting the quiz by clicking on the High Scores button. This was done intentionally so that the user can see other users high scores and can try to compete with other users by scoring more scores.
 - The high scores are stored using local storage and are sorted in descending order and cut off at the first 5 high scores, with the username entered displayed alongside the score.
-- From the high scores screen, the user can navigate back to the home screen via the go home button.
+- From the high scores screen, the user can navigate back to the home screen via the Go Home button.
 
 
 ![screenshoot of the highScore page](assets/images/highscorepage.png)
@@ -207,21 +210,21 @@ Laptop-1024px) using the Devtools service toolbar. The different CSS properties 
 
 ### **Performance**
 
-- Lighthouse
+Lighthouse
 
-- Desktop Startpage results:
+- Desktop Startpage result:
 
 ![screenshoot of start page lighthouse performance](/assets/images/lighthouse-performance.png)
 
-- Desktop gamepage results:
+- Desktop Gamepage result:
 
 ![screenshoot of game page lighthouse performance](/assets/images/game-lighthouse-performance.png)
 
-- Desktop Endpage results:
+- Desktop Endpage result:
 
 ![screenshoot of end page lighthouse performance](/assets/images/endpage-lighthouse-performance.png)
 
-- Mobile gamepage results:
+- Mobile Gamepage result:
 
 ![screenshoot of game page lighthouse performance moblie](/assets/images/moblie-lighthouse-gamepage1.png)
 
@@ -289,7 +292,7 @@ I confirmed that this wesite is responsive and all the function are displayed co
 ## Peer Review
 
 I asked my friends and brother to test the application and i received a positive feedback, no issues were reported.
-I implemented function that shows thw correct answer when user chose wrong answer with sounds effects.
+I implemented function that shows the correct answer when user choose wrong answer with sounds effects.
 
  ## **Bugs Found and Solved**
 
@@ -310,7 +313,7 @@ Solution: It was solved by using the following code
         
 Issue #2
 
-Problem: In the Game page after question on.10, 11th question was coming instead of End page
+Problem: In the Game page after question number 10, 11th question was coming instead of End page
 
 Previous code was
  ![screenshoot of bugs](/assets/images/Previous-code-error-for-Max-Question.PNG)
@@ -321,15 +324,9 @@ Solution: It was solved by using the following code
 
 Issue #3
 
-Problem: Uncaught TypeError
+Problem: color for the right and wrong answers was not showing during playing the Quiz.
 
-There was an uncaught type error on the game page, which declared inner text as null. The reason this error was happening was because the item didn't exist in the game html page.
-Solution: 
-
-Issue #4
-
-Problem: colour for right and wrong answer was not showing during playing the Quiz.
-Solutio: IN the css file i had forget to put . to call the class correct and incorrect
+Solution: In the CSS file I had forget to put . to call the class correct and incorrect
 
 Unsolved Bugs
 
@@ -348,7 +345,7 @@ Start page of the website is named as index.html in order to deploy the site cor
 This site was deployed by completing the following steps:
 
    1. Login or Signup to GitHub.
-   2. Open Project Repository.
+   2. Open Project [Repository](https://github.com/Dhvani-intwala/Disney-Quiz).
    3. Navigate to the "settings".
    4. Then under "code and automation" go the "pages" menu on the left-hand-side column.
    5. Select the "main branch" from the "source" button 
